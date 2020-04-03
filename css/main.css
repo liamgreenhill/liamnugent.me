@@ -124,9 +124,10 @@ main {
 }
 
 footer {
+  border-top: 1px solid #808080;
   grid-column-start: 2;
   grid-column-end: 5;
-  grid-row-start: 5;
+  grid-row-start: 5;  
 }
 
 p {
@@ -151,6 +152,10 @@ p.copyright {
 
 h1, p.copyright {
   font-family: sans-serif;
+}
+
+p.copyright span {
+  display: table;
 }
 
 /* ==========================================================================
