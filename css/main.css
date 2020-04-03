@@ -105,7 +105,7 @@ textarea {
 body {
   display: grid;
   grid-template-columns: 1fr 1fr 4fr 1fr 1fr ;
-  grid-template-rows: 20% auto 10% 10%;
+  grid-auto-rows: auto;
   height: 100vh;
 
 }
@@ -113,20 +113,20 @@ body {
 header {
   grid-column-start: 2;
   grid-column-end: 5;
-  grid-row-start: 1;
+  grid-row-start: 2;
 }
 
 main {
   grid-column-start: 2;
   grid-column-end: 5;
-  grid-row-start: 2;
+  grid-row-start: 3;
 
 }
 
 footer {
   grid-column-start: 2;
   grid-column-end: 5;
-  grid-row-start: 4;
+  grid-row-start: 5;
 }
 
 p {
