@@ -13,7 +13,7 @@
 
 html {
   color: #222;
-  font-size: 1em;
+  font-size:24px; /*1em*/
   line-height: 1.4;
 }
 
@@ -110,48 +110,60 @@ body {
 
 }
 
-header {
+body > header {
   grid-column-start: 2;
   grid-column-end: 5;
   grid-row-start: 2;
 }
 
-main {
+body > main, body > article {
   grid-column-start: 2;
   grid-column-end: 5;
   grid-row-start: 3;
-
 }
 
-footer {
-  border-top: 1px solid #808080;
+body > nav {
   grid-column-start: 2;
   grid-column-end: 5;
-  grid-row-start: 5;  
+  grid-row-start: 5;
 }
 
-p {
-  max-width: 600px;
+body > footer {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 6;  
+}
+
+article ul {
+  display: inherit;
 }
 
 /* ==========================================================================
    Author's Typography
    ========================================================================== */
 
-html {
-  font-size:24px;
+footer, nav {
+  border-top: 1px solid #808080;
+}
+
+h1, h2, h3, h4, h5 h6, p, ul, ol, li {
+  max-width: 600px;
+}
+
+h1, h2, h3, h4, h5 h6, p.copyright {
+  font-family: sans-serif;
 }
 
 h1 {
-  font-size: 2.4em;
+  font-size: 2em;
+}
+
+p.standfirst, p.about-the-author {
+  font-style: italic;
 }
 
 p.copyright {
   font-size: 0.6em;
-}
-
-h1, p.copyright {
-  font-family: sans-serif;
 }
 
 p.copyright span {
