@@ -134,6 +134,11 @@ body > footer {
   grid-row-start: 6;  
 }
 
+footer, nav {
+  border-top: 1px solid #808080;
+  margin-top: 2em;
+}
+
 article ul {
   display: inherit;
 }
@@ -142,9 +147,6 @@ article ul {
    Author's Typography
    ========================================================================== */
 
-footer, nav {
-  border-top: 1px solid #808080;
-}
 
 h1, h2, h3, h4, h5 h6, p, ul, ol, li {
   max-width: 660px;
@@ -168,6 +170,13 @@ p.copyright {
 
 p.copyright span {
   display: table;
+}
+
+blockquote {
+  border-left: 4px solid #222;
+  margin-inline-start: 0em;
+  margin-block-start: 0em;
+  padding-left: 1em;
 }
 
 /* ==========================================================================
