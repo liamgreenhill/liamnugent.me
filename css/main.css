@@ -273,7 +273,7 @@ html {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
+   Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
@@ -291,6 +291,23 @@ html {
   (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
+
+/* ==========================================================================
+   Media Queries for Others First accessible design
+   These examples override the primary ('mobile first') styles.
+   https://css-tricks.com/dark-modes-with-css/
+   ========================================================================== */
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: black;
+    color: #ffff00;  
+  }
+  a {
+    color: #ffff00;
+  }
+}
+
 
 /* ==========================================================================
    Print styles.
