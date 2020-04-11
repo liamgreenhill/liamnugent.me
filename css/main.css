@@ -301,10 +301,13 @@ html {
 @media (prefers-color-scheme: dark) {
   html {
     background-color: black;
-    color: #ffff00;  
+    color: #dadada;  
   }
   a {
-    color: #ffff00;
+    color: #8aadff;
+  }
+  a:visited {
+    color: #ad8aff; 
   }
 }
 
