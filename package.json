@@ -1,7 +1,7 @@
 {
-  "name": "eleventy-netlify-boilerplate",
-  "version": "1.0.3",
-  "description": "A boilerplate for building a fast static website with the Eleventy static site generator, for deployment to Netlify.",
+  "name": "eleventy-netlify-build-script",
+  "version": "1.0.0",
+  "description": "A set-up that allows you to build 11th website and deploy to Netlify.",
   "scripts": {
     "build": "eleventy",
     "watch": "eleventy --watch",
@@ -9,18 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate"
+    "url": "https://github.com/liamgreenhill/liamnugent.me"
   },
   "author": {
-    "name": "Dan Urbanowicz",
-    "email": "dan.urbanowicz@gmail.com",
-    "url": "https://www.danurbanowicz.com/"
+    "name": "Liam Nugent",
+    "email": "liam@greenhilldigital.com",
+    "url": "https://www.liamnugent.me/"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate/issues"
+    "url": "https://github.com/liamgreenhill/liamnugent.me/issues"
   },
-  "homepage": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate",
+  "homepage": "https://github.com/liamgreenhill/liamnugent.me",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0-beta.3"
   },
