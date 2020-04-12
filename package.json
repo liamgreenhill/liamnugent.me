@@ -1,11 +1,12 @@
 {
-  "name": "eleventy-netlify-build-script",
+  "name": "liamnugent.me",
   "version": "1.0.0",
-  "description": "A set-up that allows you to build 11th website and deploy to Netlify.",
+  "description": "A website built using Eleventy static site generator.",
   "scripts": {
-    "build": "npx eleventy",
-    "watch": "npx eleventy --watch",
-    "debug": "DEBUG=* npx eleventy"
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "debug": "DEBUG=* eleventy"
   },
   "repository": {
     "type": "git",
@@ -22,8 +23,12 @@
   },
   "homepage": "https://github.com/liamgreenhill/liamnugent.me",
   "devDependencies": {
-    "@11ty/eleventy": "0.10.0"
-  },
-  "dependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy-navigation": "^0.1.3",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "luxon": "^1.21.3",
+    "markdown-it": "^8.4.2",
+    "markdown-it-anchor": "^5.2.5"
   }
 }
