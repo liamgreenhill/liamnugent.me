@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "A set-up that allows you to build 11th website and deploy to Netlify.",
   "scripts": {
-    "build": "eleventy",
-    "watch": "eleventy --watch",
-    "debug": "DEBUG=* eleventy"
+    "build": "npx eleventy",
+    "watch": "npx eleventy --watch",
+    "debug": "DEBUG=* npx eleventy"
   },
   "repository": {
     "type": "git",
