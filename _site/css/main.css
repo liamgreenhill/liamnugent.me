@@ -164,6 +164,10 @@ p.standfirst, p.about-the-author {
   font-style: italic;
 }
 
+p.standfirst {
+  margin-bottom: 2em;
+}
+
 p.copyright {
   font-size: 0.6em;
 }
