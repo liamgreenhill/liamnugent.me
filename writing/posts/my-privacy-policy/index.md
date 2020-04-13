@@ -7,7 +7,7 @@ date: 2020-04-06
 
 standfirst: An explanation of the privacy policy on this website. Spoiler alert—it's very short.
 
-tags: ['accessibility', 'privacy', 'user experience', 'metrics']
+
 
 ---
 
