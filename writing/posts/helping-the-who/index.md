@@ -1,11 +1,13 @@
 ---
 layout: post-layout.liquid
 
-postTitle: Helping the World Health Organisation with COVID-19
+title: Helping the World Health Organisation with COVID-19
 
-date: 2020-04-08
+date: 2020-04-07
 
-postStandfirst: Today, I took part in a session, led by Gerry McGovern, to help the World Health Organisation (WHO) identify and classify the most important information on their website about COVID-19. If the WHO can make information easier to find and understand, it makes a practical difference to the world's response to the pandemic.
+standfirst: Today, I took part in a session, led by Gerry McGovern, to help the World Health Organisation (WHO) identify and classify the most important information about COVID-19 on their website. If the WHO can make information easier to find and understand, it makes a practical difference to the world's response to the pandemic.
+
+tags: tags: ['information architecture', 'user experience']
 
 ---
 
