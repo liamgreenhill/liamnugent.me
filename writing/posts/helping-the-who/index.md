@@ -13,7 +13,7 @@ standfirst: Today, I took part in a session, led by Gerry McGovern, to help the 
 
 I joined a webinar that included about 40 participants including representatives of the WHO and governments of Ireland, UK, Norway, Belgium, New Zealand, Canada, USA and more. Our purpose is to create a common information architecture for governmental pandemic information websites that is open to all.
 
-Today was the first of four sessions that will seek to iterate upon a list of around 90 tasks that people want to complete on the WHO website to clarify each one, remove duplication and make them all as precise as possible. After that, the WHO will survey visitors to their website to measure how important each task is to their users. And this all flows into organising and re-organising the content on the website to give users what they want.
+Today was the first of four sessions that will seek to iterate upon a list of around 90 tasks that people want to complete on the WHO website; to clarify each one, remove duplication and make them all as precise as possible. After that, the WHO will survey visitors to their website to measure how important each task is to their users. And this all flows into organising and re-organising the content on the website to give users what they want.
 
 In this case, it's a bit more pressing than most other projects I've worked on but the fundamental concepts are the same.
 
