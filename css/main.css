@@ -143,6 +143,19 @@ article ul {
   display: inherit;
 }
 
+ul.blog-post-list li {
+  margin-bottom: 1em;
+}
+
+ul.blog-post-list li small,
+ul.blog-post-list li small em {
+  display: table;
+}
+
+
+
+
+
 /* ==========================================================================
    Author's Typography
    ========================================================================== */
@@ -320,6 +333,9 @@ html {
   h5 a,
   h6 a {
     color: #ffffff;
+  }
+  ul.blog-post-list li small span {
+  color: #888888;
   }
 }
 
