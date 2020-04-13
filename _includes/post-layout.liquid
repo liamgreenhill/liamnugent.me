@@ -1,0 +1,65 @@
+<!doctype html>
+<html id="start" class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Liam Nugent's Website</title>
+  <meta name="description" content="A place where Liam Nugent writes about the web, software product management, and other related ideas.">
+  <meta name="author" content="Liam Nugent">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <article>
+
+    <header>
+      <h1>{{ postTitle }}</h1>  
+    </header>
+
+    <p class="standfirst">{{ postStandfirst }}</p>
+
+    {{ content }}
+
+    <footer>
+      <p class="byline">
+        Posted on
+        <time datetime="{{ page.date | date: '%Y-%m-%d %H:%M' }}">{{ page.date | date: "%a, %b %d, %Y" }}</time>
+        by Liam Nugent.
+      </p>
+      <p class="about-the-author">Liam Nugent has led teams that design and build successful digital products for over 10 years.</p>  
+    </footer>
+
+  </article>
+
+  <nav>
+    <h3>Navigation</h3>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/writing/">Writing</a></li>
+      <li><a href="/projects/">Projects</a></li>
+      <li><a href="/about">About</a></li>
+<!--       <li><a href="/speaking.html">Speaking</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+ -->    </ul>
+  </nav>
+
+  <footer>
+    <p class="copyright">Copyright © 2020 Liam Nugent. <span>All rights reserved.</span> <a href="#start">Back to top</a></p>
+  </footer>
+
+</body>
+
+</html>
