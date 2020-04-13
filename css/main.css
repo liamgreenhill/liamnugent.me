@@ -104,7 +104,7 @@ textarea {
 
 body {
   display: grid;
-  grid-template-columns: 0.3fr 1fr 4fr 1fr 0.3fr ;
+  grid-template-columns: 0.4fr 1fr 4fr 1fr 0.4fr ;
   grid-auto-rows: auto;
   height: 100vh;
 
@@ -308,6 +308,14 @@ html {
   }
   a:visited {
     color: #ad8aff; 
+  }
+  h1 a,
+  h2 a,
+  h3 a,
+  h4 a,
+  h5 a,
+  h6 a {
+    color: #ffffff;
   }
 }
 
