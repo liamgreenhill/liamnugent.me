@@ -4,4 +4,5 @@ module.exports = function(eleventyConfig) {
     "html",
     "css" // css is not yet a recognized template extension in Eleventy
   ]);
+  eleventyConfig.setDataDeepMerge(true);
 };
