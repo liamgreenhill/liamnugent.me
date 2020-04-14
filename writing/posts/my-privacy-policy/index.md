@@ -1,14 +1,11 @@
 ---
-layout: post-layout.liquid
-
 title: My Privacy Policy
-
+description: An explanation of the privacy policy on this website. Spoiler alert—it's very short.
 date: 2020-04-06
-
-standfirst: An explanation of the privacy policy on this website. Spoiler alert—it's very short.
-
-
-
+tags:
+  - privacy
+  - metrics
+  - product management
 ---
 
 Here is the full privacy policy for this website.

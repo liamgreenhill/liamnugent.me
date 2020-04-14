@@ -1,14 +1,11 @@
 ---
-layout: post-layout.liquid
-
 title: Helping the World Health Organisation with COVID-19
-
+description: Today, I took part in a session, led by Gerry McGovern, to help the World Health Organisation (WHO) identify and classify the most important information about COVID-19 on their website. If the WHO can make information easier to find and understand, it makes a practical difference to the world's response to the pandemic.
 date: 2020-04-07
-
-standfirst: Today, I took part in a session, led by Gerry McGovern, to help the World Health Organisation (WHO) identify and classify the most important information about COVID-19 on their website. If the WHO can make information easier to find and understand, it makes a practical difference to the world's response to the pandemic.
-
-
-
+tags:
+  - user experience
+  - information architecture
+  - open source
 ---
 
 I joined a webinar that included about 40 participants including representatives of the WHO and governments of Ireland, UK, Norway, Belgium, New Zealand, Canada, USA and more. Our purpose is to create a common information architecture for governmental pandemic information websites that is open to all.
