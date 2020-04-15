@@ -137,6 +137,7 @@ body > footer {
 footer, nav {
   border-top: 1px solid #808080;
   margin-top: 2em;
+  max-width: 660px;
 }
 
 article ul {
@@ -194,6 +195,22 @@ blockquote {
   margin-inline-start: 0em;
   margin-block-start: 0em;
   padding-left: 1em;
+}
+
+.blog-post-list li span.tags,
+.blog-post-list li span.date {
+  font-size: 0.7rem;
+}
+
+
+.blog-post-list li span.tags {
+/*  background-color: #ddd;
+  border: 1px solid grey;
+  font-family: Helvetica Neue, sans-serif;
+  padding: 0.1rem 0.5rem;
+*/
+  text-transform: capitalize;
+  
 }
 
 /* ==========================================================================
