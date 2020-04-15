@@ -145,6 +145,10 @@ article ul {
   display: inherit;
 }
 
+article ul li {
+  margin-bottom: 1rem;
+}
+
 ul.blog-post-list li {
   margin-bottom: 1em;
 }
