@@ -12,7 +12,7 @@ Maybe you've been part of a team that you've seen slowly slide into a rut. Maybe
 
 Maybe you've just joined a team that's in the doldrums.
 
-Maybe the people who used to oil the wheels that kept everyone together have moved on and you're having to face facts— you all hate each other.
+Maybe the people who used to oil the wheels that kept everyone together have moved on and you're having to face facts—you all hate each other.
 
 However you've ended up here, the fact is that you're now here and it's up to someone to do something about it. And that person might be you.
 
@@ -35,7 +35,7 @@ Avoid the temptation to keep it off-the-record and only discuss it on the teleph
 
 Once you've written your summary, forget about it!
 
-I'll let you into a secret. No-one else is interested in how you got here. They might be asking you about it (probably because they are scared that someone will ask them) but *they're aways going to be more interested in how you're going to sort the problem out.*
+I'll let you into a secret. No-one else is interested in how you got here. They might be asking you about it (probably because they are scared that someone will ask them) but *they're always going to be more interested in how you're going to sort the problem out.*
 
 So don't waste time pointing fingers. Don't prepare slide decks to throw someone under the bus. (Tag that advice with a more general "don't be an asshole" rule.)
 
@@ -57,7 +57,7 @@ As a product manager, you maybe want to start getting in everyone's face. You wa
 
 Your job is to give people the space to let them do their best work.
 
-Don't micro manage. In fact scrap all of your management tricks. Your job is to listen to what people are telling you—even if they're telling you things by not talking.
+Don't micromanage. In fact, scrap all of your management tricks. Your job is to listen to what people are telling you—even if they're telling you things by not talking.
 
 Re-frame the current problem. Break it up into manageable chunks.
 
@@ -67,13 +67,13 @@ It seems weird, but break out the nub of the problem into an item of its own on 
 
 Once you start getting some suggestions back and can tick those tasks off the list, you start to generate positive momentum. Nurture that.
 
-If a plan emerges, champion it. Be wary of naysayers. Challenge them respectfully with "how do *you* think we should...?" questions. If they have a better idea, champion that, if they don't respond at all then gently suggest "maybe we should go with this, if no-one else has a better idea".
+If a plan emerges, champion it. Be wary of naysayers. Challenge them respectfully with "how do *you* think we should...?" questions. If they have a better idea, champion that, if they don't respond at all then gently suggest "maybe we should go with this if no-one else has a better idea".
 
 Avoid words like "need", "just", "one" or "small". Basically, anything that imposes a view of other people's work. It seems trivial but try to see it from the other side. 
 
-Saying "I just need you to change that one small thing" hits the morale-killing jackpot. It unthinkingly diminishes the someone else's efforts. An engineer or a designer could reasonably react by thinking "what do you know about how to do this?!". Your job is to help everyone drop their guard and feel safe enough to contribute.
+Saying "I just need you to change that one small thing" hits the morale-killing jackpot. It unthinkingly diminishes someone else's efforts. An engineer or a designer could reasonably react by thinking "what do you know about how to do this?!". Your job is to help everyone drop their guard and feel safe enough to contribute.
 
-Instead, try "We're all looking at you here because you're good at this and this is a naaasty problem. Maybe you know a way to make this part work?".
+Instead, try "We're all looking at you here because you're good at this and this is a nasty problem. Maybe you know a way to make this part work?".
 
 More often than not, people want to help.
 
@@ -91,19 +91,19 @@ Don't pull any moves like publishing deadline dates to the team that are 2 weeks
 
  Publish the dates somewhere everyone in the team can see and say *we're* aiming for this date but we're telling the *business* that we'll definitely be done by this date.
 
-Estimating is a whole other subject that I won't cover here. Checkout the Shape Up(basecamp shape up) process for some great advice on that.
+Estimating is a whole other subject that I won't cover here. Check out the [Shape Up](https://basecamp.com/shapeup) process for some great advice on that.
 
 ## For example
 
-Here's a real life example, with some of the steps we took to get over the issue. Names and details have been changed to protect the innocent.
+Here's a real-life example, with some of the steps we took to get over the issue. Names and details have been changed to protect the innocent.
 
 Jen was working with me on a new feature on our product that lets people create new meal recipes themselves. We were working in six-week cycles.
 
-iShe had to rely on an API that was managed by Tom (who was in another team) to allow her to get and set the new recipe information on a central database. Before we kicked off, everyone knew the overall objective and everyone was all smiles and ready to go.
+She had to rely on an API that was managed by Tom (who was in another team) to allow her to get and set the new recipe information on a central database. Before we kicked off, everyone knew the overall objective and everyone was all smiles and ready to go.
 
 The architecture was a legacy mish-mash of different parts of local databases and API functions. And, no prizes for guessing what's coming next, the API documentation was like Swiss cheese.
 
-Two weeks in to a six week cycle, Jen hit Tom up with a list of her dream API calls that she wanted to use to build her feature. She asked him to confirm or deny they would work or even if they existed at all because once she started digging, it wasn't clear to her.
+Two weeks into a six-week cycle, Jen hit Tom up with a list of her dream API calls that she wanted to use to build her feature. She asked him to confirm or deny they would work or even if they existed at all because once she started digging, it wasn't clear to her.
 
 However, Tom had form for sticking his head in the sand and not responding to requests he didn't like. Tom went to ground and didn't respond. Tom's manager, Frankie, was stretched too thin so wasn't paying attention to this until I was persistently asking about it, in increasingly fraught tones.
 
@@ -139,7 +139,7 @@ I explained that the worst thing that could happen now was that we had to report
 
 Jen spoke up to say that she was new here and really didn't want to start out like this. There was some murmuring in general support. I wrapped up that part of the discussion.
 
-I moved on to say that we were parking the main ticket that had being hanging around everyone's in-tray for 4 weeks.
+I moved on to say that we were parking the main ticket that had been hanging around everyone's in-tray for 4 weeks.
 
 I explained that I'd be in touch with details of a new task which was to "Decide how to bridge the gap between what the API provides and what we need for this new feature". And, as per the process, I would give everyone an individual task to respond with their suggestions in writing.
 
