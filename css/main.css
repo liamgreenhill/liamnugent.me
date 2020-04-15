@@ -206,15 +206,12 @@ blockquote {
 
 }
 
-
 .blog-post-list li span.tags {
-/*  background-color: #ddd;
-  border: 1px solid grey;
-  font-family: Helvetica Neue, sans-serif;
-  padding: 0.1rem 0.5rem;
-*/
   text-transform: capitalize;
-  
+}
+
+nav ul li a {
+  /*font-size: 0.9rem;*/
 }
 
 /* ==========================================================================
