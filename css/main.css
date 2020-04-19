@@ -230,6 +230,21 @@ a[href].direct-link:focus:visited,
   color: #aaa;
 }
 
+time.postlist-date {
+    display: table;
+}
+
+li.postlist-item > a.tag {
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    margin: 0 0.1rem;
+}
+
+main > a.tag {
+  display: table;
+  text-transform: capitalize;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
