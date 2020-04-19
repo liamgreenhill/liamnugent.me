@@ -139,20 +139,21 @@ body > footer {
 footer, nav {
   border-top: 1px solid #808080;
   margin-top: 2em;
+  max-width: 660px;
 }
 
 article ul {
   display: inherit;
 }
 
-ul.blog-post-list li {
+article ul li {
+  margin-bottom: 1rem;
+}
+
+ol.postlist li {
   margin-bottom: 1em;
 }
 
-ul.blog-post-list li small,
-ul.blog-post-list li small em {
-  display: table;
-}
 
 
 
@@ -196,6 +197,52 @@ blockquote {
   margin-inline-start: 0em;
   margin-block-start: 0em;
   padding-left: 1em;
+}
+
+.postlist li span.tags,
+.postlist li span.date {
+  display: table;
+  font-size: 0.8rem;
+
+}
+
+.postlist li span.tags {
+  text-transform: capitalize;
+}
+
+nav ul li a {
+  /*font-size: 0.9rem;*/
+}
+
+/* Direct Links / Markdown Headers */
+.direct-link {
+  text-decoration: none;
+  margin-left: .1em;
+}
+a[href].direct-link,
+a[href].direct-link:visited {
+  color: transparent;
+}
+a[href].direct-link:focus,
+a[href].direct-link:focus:visited,
+:hover > a[href].direct-link,
+:hover > a[href].direct-link:visited {
+  color: #aaa;
+}
+
+time.postlist-date {
+    display: table;
+}
+
+li.postlist-item > a.tag {
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    margin: 0 0.1rem;
+}
+
+main > a.tag {
+  display: table;
+  text-transform: capitalize;
 }
 
 /* ==========================================================================
@@ -326,7 +373,7 @@ blockquote {
   h6 a {
     color: #ffffff;
   }
-  ul.blog-post-list li small span {
+  ol.postlist li small span {
   color: #888888;
   }
 }

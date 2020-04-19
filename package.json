@@ -1,7 +1,7 @@
 {
   "name": "liamnugent.me",
   "version": "1.0.0",
-  "description": "A website built using Eleventy static site generator.",
+  "description": "A place where Liam Nugent writes about the web, software product management, and other related ideas.",
   "scripts": {
     "build": "eleventy",
     "watch": "eleventy --watch",
