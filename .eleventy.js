@@ -37,6 +37,15 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("browserconfig.xml");
+  eleventyConfig.addPassthroughCopy("favicon.ico");
+  eleventyConfig.addPassthroughCopy("humans.txt");
+  eleventyConfig.addPassthroughCopy("icon.png");
+  eleventyConfig.addPassthroughCopy("robots.txt");
+  eleventyConfig.addPassthroughCopy("site.webmanifest");
+  eleventyConfig.addPassthroughCopy("tile.png");
+  eleventyConfig.addPassthroughCopy("tile-wide.png");
+
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
