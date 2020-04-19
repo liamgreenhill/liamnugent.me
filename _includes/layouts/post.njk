@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+---
+
+<article>
+
+  <header>
+    <h1>{{ title }}</h1>  
+  </header>
+
+  <p class="standfirst">{{ description }}</p>
+
+  {{ content | safe }}
+
+ {#  <p><a href="{{ '/' | url }}">← Home</a></p> #}
+
+
+  <footer>
+  	<p class="byline">Posted on <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time> by Liam Nugent.</p>
+  	<p class="about-the-author">Liam Nugent has led teams that design and build successful digital products for over 10 years.</p>
+  </footer>
+
+</article>
+
+

@@ -150,7 +150,7 @@ article ul li {
   margin-bottom: 1rem;
 }
 
-ul.blog-post-list li {
+ol.postlist li {
   margin-bottom: 1em;
 }
 
@@ -199,14 +199,14 @@ blockquote {
   padding-left: 1em;
 }
 
-.blog-post-list li span.tags,
-.blog-post-list li span.date {
+.postlist li span.tags,
+.postlist li span.date {
   display: table;
   font-size: 0.8rem;
 
 }
 
-.blog-post-list li span.tags {
+.postlist li span.tags {
   text-transform: capitalize;
 }
 
@@ -342,7 +342,7 @@ nav ul li a {
   h6 a {
     color: #ffffff;
   }
-  ul.blog-post-list li small span {
+  ol.postlist li small span {
   color: #888888;
   }
 }

@@ -1,9 +1,15 @@
 ---
-layout: layout.liquid
-pageTitle: About Liam Nugent
+layout: layouts/post.njk
+title: About Me
+templateClass: tmpl-post
+eleventyNavigation:
+  key: About Me
+  order: 3
 ---
 
-  <header>
+I am a person that writes stuff.
+
+<header>
     <h1>{{ pageTitle }}</h1>
   </header>
 
@@ -37,23 +43,3 @@ pageTitle: About Liam Nugent
     <p>Sure, on a commercial website, some things do need to be measured and there are ways and means to do that—but not here. No-one likes a creep.</p>
 
   </main>
-
-  <nav>
-    <h3>Navigation</h3>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/posts/">Writing</a></li>
-      <li><a href="/projects/">Projects</a></li>
-      <li><a href="/about">About</a></li>
-<!--       <li><a href="/speaking.html">Speaking</a></li>
-      <li><a href="/contact.html">Contact</a></li>
- -->    </ul>
-  </nav>
-
-  <footer>
-    <p class="copyright">Copyright © 2020 Liam Nugent. <span>All rights reserved.</span> <a href="#start">Back to top</a></p>
-  </footer>
-
-</body>
-
-</html>
