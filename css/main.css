@@ -214,6 +214,22 @@ nav ul li a {
   /*font-size: 0.9rem;*/
 }
 
+/* Direct Links / Markdown Headers */
+.direct-link {
+  text-decoration: none;
+  margin-left: .1em;
+}
+a[href].direct-link,
+a[href].direct-link:visited {
+  color: transparent;
+}
+a[href].direct-link:focus,
+a[href].direct-link:focus:visited,
+:hover > a[href].direct-link,
+:hover > a[href].direct-link:visited {
+  color: #aaa;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
