@@ -12,8 +12,10 @@
    ========================================================================== */
 
 html {
+  background-color: #fff8ea; 
   color: #222;
-  font-size:23px; /*1em*/
+  font-family: Georgia;
+  font-size:22px; /*1em*/
   line-height: 1.4;
 }
 
@@ -134,26 +136,35 @@ body > footer {
   grid-row-start: 6;  
 }
 
-footer, nav {
+nav {
   border-top: 1px solid #808080;
   margin-top: 2em;
+  max-width: 660px;
+}
+
+footer {
+  border-top: 1rem solid black;
+  margin-top: 2em;
+  max-width: 660px;
 }
 
 article ul {
   display: inherit;
 }
 
-ul.blog-post-list li {
+article ul li {
+  margin-bottom: 1rem;
+}
+
+ol.postlist li {
   margin-bottom: 1em;
 }
 
-ul.blog-post-list li small,
-ul.blog-post-list li small em {
-  display: table;
+
+h1 {
+  border-bottom: 1rem solid black;
+  padding-bottom: 3rem;
 }
-
-
-
 
 
 /* ==========================================================================
@@ -165,12 +176,12 @@ h1, h2, h3, h4, h5 h6, p, ul, ol, li {
   max-width: 660px;
 }
 
-h1, h2, h3, h4, h5 h6, p.copyright {
-  font-family: sans-serif;
+h1, h2, h3, h4, h5 h6, nav ul li a, p.copyright {
+  font-family: Helvetica Neue, sans-serif;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.4em;
 }
 
 p.standfirst, p.about-the-author {
@@ -196,15 +207,51 @@ blockquote {
   padding-left: 1em;
 }
 
-/* ==========================================================================
-   Author's Colours
-   ========================================================================== */
+.postlist li span.tags,
+.postlist li span.date {
+  display: table;
+  font-size: 0.8rem;
 
-html {
-  background-color: #fafbff;
 }
 
+.postlist li span.tags {
+  text-transform: capitalize;
+}
 
+nav ul li a {
+  /*font-size: 0.9rem;*/
+}
+
+/* Direct Links / Markdown Headers */
+.direct-link {
+  text-decoration: none;
+  margin-left: .1em;
+}
+a[href].direct-link,
+a[href].direct-link:visited {
+  color: transparent;
+}
+a[href].direct-link:focus,
+a[href].direct-link:focus:visited,
+:hover > a[href].direct-link,
+:hover > a[href].direct-link:visited {
+  color: #aaa;
+}
+
+time.postlist-date {
+    display: table;
+}
+
+li.postlist-item > a.tag {
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    margin: 0 0.1rem;
+}
+
+main > a.tag {
+  display: table;
+  text-transform: capitalize;
+}
 
 /* ==========================================================================
    Helper classes
@@ -334,8 +381,14 @@ html {
   h6 a {
     color: #ffffff;
   }
-  ul.blog-post-list li small span {
+  ol.postlist li small span {
   color: #888888;
+  }
+  h1 {
+    border-bottom: 1rem solid #dadada;
+  }
+  footer {
+    border-top: 1rem solid #dadada;
   }
 }
 
