@@ -136,8 +136,14 @@ body > footer {
   grid-row-start: 6;  
 }
 
-footer, nav {
+nav {
   border-top: 1px solid #808080;
+  margin-top: 2em;
+  max-width: 660px;
+}
+
+footer {
+  border-top: 1rem solid black;
   margin-top: 2em;
   max-width: 660px;
 }
@@ -155,8 +161,10 @@ ol.postlist li {
 }
 
 
-
-
+h1 {
+  border-bottom: 1rem solid black;
+  padding-bottom: 3rem;
+}
 
 
 /* ==========================================================================
@@ -375,6 +383,12 @@ main > a.tag {
   }
   ol.postlist li small span {
   color: #888888;
+  }
+  h1 {
+    border-bottom: 1rem solid #dadada;
+  }
+  footer {
+    border-top: 1rem solid #dadada;
   }
 }
 
