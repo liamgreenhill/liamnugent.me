@@ -3,7 +3,7 @@ title: How to get a dysfunctional product team back on track
 description: Some advice on how to face up to reality when things don't go well along with some practical steps on how to turn it around.
 date: 2020-04-15
 tags:
-  - UX
+  - user experience
   - information architecture
   - open source
 layout: layouts/post.njk
