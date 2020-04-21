@@ -8,7 +8,7 @@
   <meta name="author" content="Liam Nugent">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="manifest" href="site.webmanifest">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
 
   <link rel="stylesheet" href="{{ '/css/normalize.css' | url }}">
@@ -21,9 +21,9 @@
 
 
 
-  <body>
+<body>
 
-    {{ content | safe }}
+  {{ content | safe }}
 
   <nav>
     <h3>Navigation</h3>
@@ -35,14 +35,12 @@
     </ul>
   </nav>
 
-
-
-
-
   <footer>
     <p class="copyright">Copyright © 2020 Liam Nugent. <span>All rights reserved.</span> <a href="#start">Back to top</a></p>
   </footer>
 
-    <!-- Current page: {{ page.url | url }} -->
-  </body>
+  <!-- Current page: {{ page.url | url }} -->
+
+</body>
+
 </html>
