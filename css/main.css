@@ -104,76 +104,38 @@ textarea {
    Author's layout
    ========================================================================== */
 
+
 body {
   display: grid;
-  grid-template-columns: 0.4fr 1fr 4fr 1fr 0.4fr ;
+  grid-template-columns: 0.3fr minmax(auto, 30rem) 0.3fr;
+  grid-gap: 1rem;
   grid-auto-rows: auto;
-  height: 100vh;
-
 }
 
-body > header {
+body > header, body > main, body > nav, body > footer {
   grid-column-start: 2;
-  grid-column-end: 5;
-  grid-row-start: 2;
-}
-
-body > main, body > article {
-  grid-column-start: 2;
-  grid-column-end: 5;
-  grid-row-start: 3;
-}
-
-body > nav {
-  grid-column-start: 2;
-  grid-column-end: 5;
-  grid-row-start: 5;
-}
-
-body > footer {
-  grid-column-start: 2;
-  grid-column-end: 5;
-  grid-row-start: 6;  
-}
-
-nav {
-  border-top: 1px solid #808080;
-  margin-top: 2em;
-  max-width: 660px;
-}
-
-footer {
-  border-top: 1rem solid black;
-  margin-top: 2em;
-  max-width: 660px;
-}
-
-article ul {
-  display: inherit;
-}
-
-article ul li {
-  margin-bottom: 1rem;
-}
-
-ol.postlist li {
-  margin-bottom: 1em;
 }
 
 
-h1 {
-  border-bottom: 1rem solid black;
-  padding-bottom: 3rem;
-}
 
 
 /* ==========================================================================
    Author's Typography
    ========================================================================== */
 
+header {
+  border-bottom: 1rem solid black;
+  padding-bottom: 1rem;
+}
 
-h1, h2, h3, h4, h5 h6, p, ul, ol, li {
-  max-width: 660px;
+nav, article > footer {
+  border-top: 0.25rem solid black;
+  margin-top: 2em;
+}
+
+body > footer {
+  border-top: 1rem solid black;
+  margin-top: 2em;
 }
 
 h1, h2, h3, h4, h5 h6, nav ul li a, p.copyright {
@@ -184,12 +146,18 @@ h1 {
   font-size: 2.4em;
 }
 
+h2 {
+  margin-top: 2rem;
+}
+
 p.standfirst, p.about-the-author {
   font-style: italic;
 }
 
 p.standfirst {
   margin-bottom: 2em;
+  border-bottom: 0.1rem solid black;
+  padding-bottom: 2rem;
 }
 
 p.copyright {
@@ -207,6 +175,18 @@ blockquote {
   padding-left: 1em;
 }
 
+article ul {
+  display: inherit;
+}
+
+article ul li {
+  margin-bottom: 1rem;
+}
+
+ol.postlist li {
+  margin-bottom: 1em;
+}
+
 .postlist li span.tags,
 .postlist li span.date {
   display: table;
@@ -218,9 +198,6 @@ blockquote {
   text-transform: capitalize;
 }
 
-nav ul li a {
-  /*font-size: 0.9rem;*/
-}
 
 /* Direct Links / Markdown Headers */
 .direct-link {
@@ -344,9 +321,6 @@ main > a.tag {
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
-  body {
-    grid-template-columns: 1fr 1fr 4fr 1fr 1fr ;
-  }
 }
 
 @media print,
@@ -384,12 +358,24 @@ main > a.tag {
   ol.postlist li small span {
   color: #888888;
   }
-  h1 {
+
+  header {
     border-bottom: 1rem solid #dadada;
   }
-  footer {
+
+  nav, article > footer {
+    border-top: 0.25rem solid #dadada;
+  }
+
+  body > footer {
     border-top: 1rem solid #dadada;
   }
+
+  p.standfirst {
+  border-bottom: 0.1rem solid #dadada;
+  }
+
+
 }
 
 
