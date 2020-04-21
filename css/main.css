@@ -107,7 +107,7 @@ textarea {
 
 body {
   display: grid;
-  grid-template-columns: 0.3fr minmax(auto, 30rem) 0.3fr;
+  grid-template-columns: 0.3fr minmax(auto, 34rem) 0.3fr;
   grid-gap: 1rem;
   grid-auto-rows: auto;
 }
@@ -183,8 +183,12 @@ article ul li {
   margin-bottom: 1rem;
 }
 
-ol.postlist li {
-  margin-bottom: 1em;
+ol.postlist, ul.postlist {
+  margin-bottom: 2rem;
+}
+
+ol.postlist li , ul.postlist li {
+  margin-bottom: 1rem;
 }
 
 .postlist li span.tags,
