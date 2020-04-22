@@ -11,15 +11,13 @@ layout: layouts/post.njk
 
 A few weeks ago, I wrote about how I volunteered to take part in sessions with the World Health Organisation(WHO) and [Gerry McGovern](https://gerrymcgovern.com/fighting-coronavirus-with-data/). The purpose was to help create a list of tasks that the WHO could use to survey their website users and ask them to identify what's important to them.
 
-There are two main audiences to consider: the public, and health care professionals.
+That process is now complete and the list has been published. The survey will start on the WHO website soon.
 
 The results of the survey will go on to inform the information archtecture of subsequent iterations of the site. Which is a grand way of saying that they will make COVID-19 advice easier to find in future. And that could help reduce the impact of the pandemic.
 
 I joined three of the four public sessions and listened to the research findings, advice and input from content specialists, information architecture and user experience experts. The session also included representatives from the WHO and several national governments, public policy-makers, medical professionals and many more besides.
 
 We started with a collation of several sources of raw data and then honed that to produce the list. The process seems simple—remove duplicates, clarify wording, merge similar tasks, remove overlaps—but there are hundreds of hours of effort involved. It's always surprising how much effort it takes to make complex information seem simple.
-
-The tasklist below has now been signed off by WHO and will soon be launched as part of a survey on the WHO website.
 
 To quote [Brian Lamb](https://about.me/brian.lamb), who led this work alongside Gerry, 
 
