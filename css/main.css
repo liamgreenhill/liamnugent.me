@@ -107,7 +107,7 @@ textarea {
 
 body {
   display: grid;
-  grid-template-columns: 0.3fr minmax(auto, 34rem) 0.3fr;
+  grid-template-columns: minmax(0, auto) minmax(auto, 28rem) minmax(0, auto);
   grid-gap: 1rem;
   grid-auto-rows: auto;
 }
@@ -118,15 +118,9 @@ body > header, body > main, body > nav, body > footer {
 
 
 
-
 /* ==========================================================================
    Author's Typography
    ========================================================================== */
-
-header {
-  border-bottom: 1rem solid black;
-  padding-bottom: 1rem;
-}
 
 nav, article > footer {
   border-top: 0.25rem solid black;
@@ -361,10 +355,6 @@ main > a.tag {
   }
   ol.postlist li small span {
   color: #888888;
-  }
-
-  header {
-    border-bottom: 1rem solid #dadada;
   }
 
   nav, article > footer {
