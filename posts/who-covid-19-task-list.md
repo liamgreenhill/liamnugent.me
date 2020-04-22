@@ -1,22 +1,31 @@
 ---
 title: WHO COVID-19 Information Architecture Task List
-description: This is the output from the recent sessions I participated in with the WHO and experts from around the world—a list of the things that people need from the WHO website. Published now as open source to be used by anyone.
-date: 2020-04-08
-tags:
+description: This is the output from the recent sessions in which I participated with the WHO and experts from around the world. Published now as open-source to be used "to the benefit of humanity".
+date: 2020-04-22
+tags: 
+  - user experience
   - information architecture
   - open source
 layout: layouts/post.njk
 ---
 
-A few weeks ago, I wrote about how I volunteered to take part in sessions with the WHO and Gerry McGovern. The purpose was to help create a list of tasks that the WHO could use to survey their website users and ask them to identify what's important to them.
+A few weeks ago, I wrote about how I volunteered to take part in sessions with the World Health Organisation(WHO) and [Gerry McGovern](https://gerrymcgovern.com/fighting-coronavirus-with-data/). The purpose was to help create a list of tasks that the WHO could use to survey their website users and ask them to identify what's important to them.
 
-I joined three of the four public sessions and listened to the research findings, advice and input from content specialists, information architecture and user experience experts, public policy-makers, and many more besides. We started with a collation of several sources of raw data and then honed that to produce the list below.
+There are two main audiences to consider: the public, and health care professionals.
+
+The results of the survey will go on to inform the information archtecture of subsequent iterations of the site. Which is a grand way of saying that they will make COVID-19 advice easier to find in future. And that could help reduce the impact of the pandemic.
+
+I joined three of the four public sessions and listened to the research findings, advice and input from content specialists, information architecture and user experience experts. The session also included representatives from the WHO and several national governments, public policy-makers, medical professionals and many more besides.
+
+We started with a collation of several sources of raw data and then honed that to produce the list. The process seems simple—remove duplicates, clarify wording, merge similar tasks, remove overlaps—but there are hundreds of hours of effort involved. It's always surprising how much effort it takes to make complex information seem simple.
 
 The tasklist below has now been signed off by WHO and will soon be launched as part of a survey on the WHO website.
 
-To quote [Brian Lamb](), who led this work, 
+To quote [Brian Lamb](https://about.me/brian.lamb), who led this work alongside Gerry, 
 
-> This tasklist is due to the work of hundreds of experts and extensive research on what people need. It is an initiative driven by WHO and particularly supported by health organizations from Ireland, Canada, Norway, UK, New Zealand, and Belgium, and the contributions of individuals from many other countries. Please feel free to use to the benefit of humanity. If you could like to run an adapted version of this survey in your country, please get in touch, it’s free.
+> This tasklist is due to the work of hundreds of experts and extensive research on what people need. It is an initiative driven by WHO and particularly supported by health organizations from Ireland, Canada, Norway, UK, New Zealand, and Belgium, and the contributions of individuals from many other countries.
+>
+> Please feel free to use to the benefit of humanity. If you could like to run an adapted version of this survey in your country, please get in touch, it’s free.
 
 
 ## TASKLIST
