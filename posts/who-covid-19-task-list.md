@@ -1,6 +1,6 @@
 ---
 title: WHO COVID-19 Information Architecture Task List
-description: This is the output from the recent sessions in which I participated with the WHO and experts from around the world. Published now as open-source to be used "to the benefit of humanity".
+description: This is the output from the recent sessions in which I participated with the WHO and experts from around the world. Published now as open-source to be used “to the benefit of humanity”.
 date: 2020-04-22
 tags: 
   - user experience
@@ -9,7 +9,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-A few weeks ago, I wrote about how I volunteered to take part in sessions with the World Health Organisation(WHO) and [Gerry McGovern](https://gerrymcgovern.com/fighting-coronavirus-with-data/). The purpose was to help create a list of tasks that the WHO could use to survey their website users and ask them to identify what's important to them.
+A few weeks ago, I wrote about how I volunteered to take part in sessions with the World Health Organisation(WHO) and [Gerry McGovern](https://gerrymcgovern.com/fighting-coronavirus-with-data/). The purpose was to help create a list of tasks that the WHO could use to survey their website users and ask them to identify what’s important to them.
 
 There are two main audiences to consider: the public, and health care professionals.
 
@@ -17,7 +17,7 @@ The results of the survey will go on to inform the information archtecture of su
 
 I joined three of the four public sessions and listened to the research findings, advice and input from content specialists, information architecture and user experience experts. The session also included representatives from the WHO and several national governments, public policy-makers, medical professionals and many more besides.
 
-We started with a collation of several sources of raw data and then honed that to produce the list. The process seems simple—remove duplicates, clarify wording, merge similar tasks, remove overlaps—but there are hundreds of hours of effort involved. It's always surprising how much effort it takes to make complex information seem simple.
+We started with a collation of several sources of raw data and then honed that to produce the list. The process seems simple—remove duplicates, clarify wording, merge similar tasks, remove overlaps—but there are hundreds of hours of effort involved. It’s always surprising how much effort it takes to make complex information seem simple.
 
 The tasklist below has now been signed off by WHO and will soon be launched as part of a survey on the WHO website.
 
@@ -59,7 +59,7 @@ To quote [Brian Lamb](https://about.me/brian.lamb), who led this work alongside 
 - Financial support, assistance, benefits (eligibility, availability)
 - Food, medicines, essential products (stocks, hoarding, availability, disruptions) 
 - Government guidance, regulations (national, local)
-- Government roles, responsibilities, who's in charge of what?
+- Government roles, responsibilities, who’s in charge of what?
 - Government strategy (long-term control, lockdown exit, transition, economy reboot)
 - Health services unrelated to pandemic (appointments, prescriptions, treatments)
 - High risk transmission environments, (care homes, restaurants, supermarkets)
@@ -106,7 +106,7 @@ To quote [Brian Lamb](https://about.me/brian.lamb), who led this work alongside 
 - Virus survival / viability / persistence on surfaces, in air
 - Volunteering opportunities
 - WHO guidelines, standards, decisions
-- WHO's position, opinion, response to
+- WHO’s position, opinion, response to
 - Working from home (guidelines, tips, advice)
 - Workplaces (preventing spread, rights, reopening criteria, guidance)
 

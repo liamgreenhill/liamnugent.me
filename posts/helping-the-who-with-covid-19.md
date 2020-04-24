@@ -13,10 +13,10 @@ I joined a webinar that included about 40 participants including representatives
 
 Today was the first of four sessions that will seek to iterate upon a list of around 90 tasks that people want to complete on the WHO website to clarify each one, remove duplication and make them all as precise as possible. After that, the WHO will survey visitors to their website to measure how important each task is to their users. And this all flows into organising and re-organising the content on the website to give users what they want.
 
-In this case, it's a bit more pressing than most other projects I've worked on but the fundamental concepts are the same.
+In this case, it’s a bit more pressing than most other projects I’ve worked on but the fundamental concepts are the same.
 
-If the WHO can make information easier to find and understand, it makes a _practical_ difference to the world's response to the pandemic.
+If the WHO can make information easier to find and understand, it makes a _practical_ difference to the world’s response to the pandemic.
 
-Obviously, this is nowhere near the frontline of dealing with the virus and the impact it causes. I'm conscious that health care professionals and the essential workers that support them are doing the real heavy-lifting. But it's a small contribution.
+Obviously, this is nowhere near the frontline of dealing with the virus and the impact it causes. I’m conscious that health care professionals and the essential workers that support them are doing the real heavy-lifting. But it’s a small contribution.
 
 

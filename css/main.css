@@ -123,12 +123,12 @@ body > header, body > main, body > nav, body > footer {
    ========================================================================== */
 
 nav, article > footer {
-  border-top: 0.25rem solid black;
+  border-top: 0.25rem solid Black;
   margin-top: 2em;
 }
 
 body > footer {
-  border-top: 1rem solid black;
+  border-top: 1rem solid Black;
   margin-top: 2em;
 }
 
@@ -150,17 +150,23 @@ p.standfirst, p.about-the-author {
 
 p.standfirst {
   margin-bottom: 2em;
-  border-bottom: 0.1rem solid black;
+  border-bottom: 0.1rem solid Black;
   padding-bottom: 2rem;
 }
 
 p.copyright {
-  font-size: 0.6em;
+  font-size: 0.6rem;
 }
 
 p.copyright span {
   display: table;
 }
+
+footer > p > a {
+  display: table;
+  margin-top: 1rem;
+}
+
 
 blockquote {
   border-left: 4px solid #222;
@@ -173,7 +179,7 @@ article ul {
   display: inherit;
 }
 
-article ul li {
+li {
   margin-bottom: 1rem;
 }
 
@@ -182,7 +188,7 @@ ol.postlist, ul.postlist {
 }
 
 ol.postlist li , ul.postlist li {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .postlist li span.tags,
@@ -219,13 +225,18 @@ time.postlist-date {
 
 li.postlist-item > a.tag {
     font-size: 0.8rem;
-    text-transform: capitalize;
     margin: 0 0.1rem;
+    text-transform: capitalize;
+    white-space: nowrap;
 }
 
 main > a.tag {
   display: table;
   text-transform: capitalize;
+}
+
+img {
+  width: 100%;
 }
 
 /* ==========================================================================
@@ -336,7 +347,7 @@ main > a.tag {
 
 @media (prefers-color-scheme: dark) {
   html {
-    background-color: black;
+    background-color: Black;
     color: #dadada;  
   }
   a {
