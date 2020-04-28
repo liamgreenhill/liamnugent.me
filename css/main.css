@@ -228,15 +228,16 @@ a[href].direct-link:focus:visited,
 }
 
 time.postlist-date {
-    display: table;
+  display: table;
 }
 
 li.postlist-item > a.tag {
-    font-size: 0.8rem;
-    margin: 0 0.1rem;
-    text-transform: capitalize;
-    white-space: nowrap;
+  font-size: 0.8rem;
+  margin: 0 0.1rem;
+  text-transform: capitalize;
+  white-space: nowrap;
 }
+
 
 main > a.tag {
   display: table;
