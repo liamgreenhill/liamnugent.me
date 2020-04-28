@@ -18,7 +18,7 @@ layout: layouts/base.njk
 
       {{ content | safe }}
 
-     {#  <p><a href="{{ '/' | url }}">← Home</a></p> #}
+      <p><a href="{{ '/posts' | url }}">← Archive</a></p>
 
       <footer>
         <p class="byline">Posted on <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time> by Liam Nugent.</p>

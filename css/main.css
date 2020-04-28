@@ -13,7 +13,7 @@
 
 html {
   background-color: #fff8ea; 
-  color: #222;
+  color: #16161d;
   font-family: Georgia;
   font-size:22px; /*1em*/
   line-height: 1.4;
@@ -187,9 +187,17 @@ ol.postlist, ul.postlist {
   margin-bottom: 2rem;
 }
 
-ol.postlist li , ul.postlist li {
+ol.postlist li, ul.postlist li {
+  border-top: 1px solid #16161d;
   margin-bottom: 2rem;
+  padding-top: 1rem;
 }
+
+ol.postlist li:nth-child(1), ul.postlist li:nth-child(1) {
+  border: none;
+  padding-top: 0;
+}
+
 
 .postlist li span.tags,
 .postlist li span.date {
@@ -347,7 +355,7 @@ img {
 
 @media (prefers-color-scheme: dark) {
   html {
-    background-color: Black;
+    background-color: #16161d;
     color: #dadada;  
   }
   a {
@@ -364,9 +372,6 @@ img {
   h6 a {
     color: #ffffff;
   }
-  ol.postlist li small span {
-  color: #888888;
-  }
 
   nav, article > footer {
     border-top: 0.25rem solid #dadada;
@@ -380,6 +385,9 @@ img {
   border-bottom: 0.1rem solid #dadada;
   }
 
+  ol.postlist li, ul.postlist li {
+  border-top: 1px solid #dadada;
+  }
 
 }
 
