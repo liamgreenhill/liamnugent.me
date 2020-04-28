@@ -1,6 +1,6 @@
 ---
 title: Design Elements
-description: Do you want to know what the pink squiggle is all about?
+description: Do you want to know what the vibrant purple squiggle in the header is all about?
 date: 2020-04-24
 tags:
   - ux design
@@ -10,7 +10,7 @@ layout: layouts/post.njk
 
 Take a look at the image below. It’s a plate from Poor Things by Alasdair Gray. It’s a character called Goodwin Baxter, a kind of proto-Dr Frankenstein.
 
-See any similarities between that and the pink squiggle above?
+See any similarities between that and the purple squiggle above?
 
 <img src="img/godwin-baxter-plate.jpg" loading="lazy" alt="Plate of Godwin Baxter from Poor Things by Alasdair Gray" />
 
