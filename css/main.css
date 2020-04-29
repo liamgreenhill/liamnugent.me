@@ -179,6 +179,10 @@ article ul {
   display: inherit;
 }
 
+article ul li a {
+  word-break: break-all;
+}
+
 li {
   margin-bottom: 1rem;
 }
