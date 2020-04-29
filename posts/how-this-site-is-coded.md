@@ -34,7 +34,7 @@ There are a few reasons for this:
 
 2. I’m conscious that building websites can get unnecessarily complicated very quickly. It is very easy to find yourself fighting against the browser or the environment so, in this case, I’m doing it Judo-style. I intend to harness all the goodness that browser builders give you out-of-the-box for speed, layout and accessibility, and throw it all right back at you. Haaa-dooo-ken!
 
-3. It would be easy to use a dynamic CMS or framework. But that usually comes bundled with kilobytes or even megabytes of unnecessary code. So every time someone looks at my site that would mean that more energy has been wasted moving lots of unused code around the internet to get it to your screen. So this is my small act of protest to help reduce digital waste.
+3. It would be easy to use a dynamic CMS or framework. But that usually comes bundled with kilobytes or even megabytes of unnecessary code. So every time someone looks at my site that would mean that more energy has been wasted moving lots of unused code around the internet to get it to your screen. This is my small act of protest to help reduce digital waste.
 
 
 As of day one, hour zero, it’s already paying dividends. With no dedicated optimisation work, the site [scores a full 100](https://twitter.com/liamjnugent/status/1246061994169466881?s=21) on every count in a Google Lighthouse Audit.
