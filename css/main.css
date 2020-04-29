@@ -107,7 +107,7 @@ textarea {
 
 body {
   display: grid;
-  grid-template-columns: minmax(0, auto) minmax(auto, 28rem) minmax(0, auto);
+  grid-template-columns: minmax(0, auto) minmax(0, 28rem) minmax(0, auto);
   grid-gap: 1rem;
   grid-auto-rows: auto;
 }
@@ -238,6 +238,10 @@ li.postlist-item > a.tag {
   white-space: nowrap;
 }
 
+pre, code {
+  background-color: bisque;
+  overflow: scroll;
+}
 
 main > a.tag {
   display: table;
