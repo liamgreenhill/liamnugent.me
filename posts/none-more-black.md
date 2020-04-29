@@ -14,6 +14,10 @@ This evening, I saw [this tweet](https://twitter.com/tareqismail/status/12533429
 
 Eigengrau is the colour seen by the eye in perfect darkness. So it’s more black than black. Except it’s actually a really dark grey.
 
+The hex color reference is #16161d. <svg width="1rem" height="1rem"><rect width="0.8rem" height="0.8rem" style="fill:#16161d;" /></svg>
+
+
+
 As Nigel from Spinal Tap would say, “It‘s like, ‘How much more black could this be?’ And the answer is, ‘None. None more black’.”
 
 I’m not too proud to admit that this is the kind of silly detail that I _love_. It makes no practical difference but, of course, there was no stopping me. I immediately opened up `main.css`, searched for black and replaced every instance with my new favourite colour, Eigengrau.
