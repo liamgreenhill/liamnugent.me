@@ -19,7 +19,7 @@ eleventyNavigation:
 
   <h2>Latest posts</h2>
 
-  {% set postslist = collections.posts | head(-3) %}
+  {% set postslist = collections.posts | head(-5) %}
   {% set postslistCounter = collections.posts | length %}
   {% include "postslist-notags.njk" %}
   <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
