@@ -13,7 +13,7 @@
 
 html {
   background-color: #fff8ea; 
-  color: #222;
+  color: #16161d;
   font-family: Georgia;
   font-size:22px; /*1em*/
   line-height: 1.4;
@@ -107,7 +107,7 @@ textarea {
 
 body {
   display: grid;
-  grid-template-columns: 0.3fr minmax(auto, 30rem) 0.3fr;
+  grid-template-columns: minmax(0, auto) minmax(0, 28rem) minmax(0, auto);
   grid-gap: 1rem;
   grid-auto-rows: auto;
 }
@@ -118,27 +118,22 @@ body > header, body > main, body > nav, body > footer {
 
 
 
-
 /* ==========================================================================
    Author's Typography
    ========================================================================== */
 
-header {
-  border-bottom: 1rem solid black;
-  padding-bottom: 1rem;
-}
 
 nav, article > footer {
-  border-top: 0.25rem solid black;
+  border-top: 0.25rem solid Black;
   margin-top: 2em;
 }
 
 body > footer {
-  border-top: 1rem solid black;
+  border-top: 1rem solid Black;
   margin-top: 2em;
 }
 
-h1, h2, h3, h4, h5 h6, nav ul li a, p.copyright {
+h1, h2, h3, h4, h5 h6 {
   font-family: Helvetica Neue, sans-serif;
 }
 
@@ -156,17 +151,23 @@ p.standfirst, p.about-the-author {
 
 p.standfirst {
   margin-bottom: 2em;
-  border-bottom: 0.1rem solid black;
+  border-bottom: 0.1rem solid Black;
   padding-bottom: 2rem;
 }
 
 p.copyright {
-  font-size: 0.6em;
+  font-size: 0.6rem;
 }
 
 p.copyright span {
   display: table;
 }
+
+footer > p > a {
+  display: table;
+  margin-top: 1rem;
+}
+
 
 blockquote {
   border-left: 4px solid #222;
@@ -179,13 +180,29 @@ article ul {
   display: inherit;
 }
 
-article ul li {
+article ul li a {
+  word-break: break-all;
+}
+
+li {
   margin-bottom: 1rem;
 }
 
-ol.postlist li {
-  margin-bottom: 1em;
+ol.postlist, ul.postlist {
+  margin-bottom: 2rem;
 }
+
+ol.postlist li, ul.postlist li {
+  border-top: 1px solid #16161d;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+ol.postlist li:nth-child(1), ul.postlist li:nth-child(1) {
+  border: none;
+  padding-top: 0;
+}
+
 
 .postlist li span.tags,
 .postlist li span.date {
@@ -216,18 +233,28 @@ a[href].direct-link:focus:visited,
 }
 
 time.postlist-date {
-    display: table;
+  display: table;
 }
 
 li.postlist-item > a.tag {
-    font-size: 0.8rem;
-    text-transform: capitalize;
-    margin: 0 0.1rem;
+  font-size: 0.8rem;
+  margin: 0 0.1rem;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+pre, code {
+  background-color: bisque;
+  overflow: scroll;
 }
 
 main > a.tag {
   display: table;
   text-transform: capitalize;
+}
+
+img {
+  width: 100%;
 }
 
 /* ==========================================================================
@@ -338,7 +365,7 @@ main > a.tag {
 
 @media (prefers-color-scheme: dark) {
   html {
-    background-color: black;
+    background-color: #16161d;
     color: #dadada;  
   }
   a {
@@ -355,13 +382,6 @@ main > a.tag {
   h6 a {
     color: #ffffff;
   }
-  ol.postlist li small span {
-  color: #888888;
-  }
-
-  header {
-    border-bottom: 1rem solid #dadada;
-  }
 
   nav, article > footer {
     border-top: 0.25rem solid #dadada;
@@ -375,6 +395,13 @@ main > a.tag {
   border-bottom: 0.1rem solid #dadada;
   }
 
+  ol.postlist li, ul.postlist li {
+  border-top: 1px solid #dadada;
+  }
+
+  pre, code {
+    background-color: #32323A;
+  }
 
 }
 
