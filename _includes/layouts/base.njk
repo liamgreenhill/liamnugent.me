@@ -28,8 +28,8 @@
   <link rel="manifest" href="/site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="stylesheet" href="{{ '/css/normalize.css' | url }}">
-  <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+  <link rel="stylesheet" href="{{ '/css/normalize.css' | url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ '/css/main.css' | url }}" media="print" onload="this.media='all'">
   
   <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
 
