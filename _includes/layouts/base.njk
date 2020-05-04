@@ -11,29 +11,26 @@
   <meta name="theme-color" content="#fafafa">
 
   <!--  Essential meta tags for social media post cards -->
-
   <meta property="og:title" content="{{ renderData.title or title or metadata.title }}">
   <meta property="og:description" content="{{ renderData.description or description or metadata.description }}">
   <meta property="og:image" content="https://liamnugent.me/img/og_image-1.jpg">
   <meta property="og:url" content="https://liamnugent.me{{ page.url | url }}" >
   <meta name="twitter:card" content="summary_large_image">
-
-
   <!--  Non-essential, but recommended, meta tags for social media post cards-->
-
   <meta property="og:site_name" content="Liam Nugent">
   <meta name="twitter:image:alt" content="Vibrant purple freehand line that roughly bisects the screen horizontally with a dip in the centre.">
-
   
   <link rel="manifest" href="/site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="stylesheet" href="{{ '/css/normalize.css' | url }}" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="{{ '/css/main.css' | url }}" media="print" onload="this.media='all'">
-  
   <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
-
   <link rel="canonical" href="https://liamnugent.me{{ page.url | url }}">
+
+  {% set css %}
+    {% include "css/main.css" %}
+  {% endset %}
+  <style>
+    {{ css | cssmin | safe }}
+  </style>
 </head>
 
 <body>
