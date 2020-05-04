@@ -6,6 +6,8 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 
+const CleanCSS = require("clean-css");
+
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
@@ -33,6 +35,11 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, n);
   });
 
+  /* CSS Minify */
+  eleventyConfig.addFilter("cssmin", function(code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
+
   eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
 
   eleventyConfig.addPassthroughCopy("img");
@@ -45,7 +52,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("site.webmanifest");
   eleventyConfig.addPassthroughCopy("tile.png");
   eleventyConfig.addPassthroughCopy("tile-wide.png");
-
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
