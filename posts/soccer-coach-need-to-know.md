@@ -1,6 +1,6 @@
 ---
-title: If you are a soccer coach, you need to know this!
-description: These days, it's all about moneyball and the marginal gains, so how can you use data to decide what to prioritise?
+title: If you coach any soccer team, you might want to know this!
+description: These days, it's all about moneyball and marginal gains at the elite level but how can YOU use data to decide what to prioritise?
 date: 2020-05-06
 tags:
   - data visualization
@@ -10,11 +10,15 @@ layout: layouts/post.njk
 
 The chart below shows data of all the yellow cards issued across several football league competitions across several seasons.
 
-It's grouped by the reason each card was issued and then sorted so that the most frequent reason is shown first and the rest appear in descending order.
+### bar chart with reasons in alphabetical order
+>> bar chart goes here
 
-For those who are interested, here's a detailed breakdown of [how I produced this chart](#).
+It's clear to see that reckless tackles is a big factor, but there's maybe a better way to look at the same information a different way to help contextualise it.
 
 ## Yellow cards issued, ordered by most frequent reason
+
+Have a look at this chart below. It's the same information presented on a donut chart.
+This time, it's sorted so that the most frequent reason is shown first and the rest appear in descending order.
 
 <svg viewBox="0 0 627 463" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Artboard</title>
@@ -240,10 +244,16 @@ For those who are interested, here's a detailed breakdown of [how I produced thi
     </g>
 </svg>
 
+(For those who are interested, here's a detailed breakdown of [how I produced this chart](#).)
+
 
 ## What stories does that tell us?
 
-Starting with reckless tackles, we easily can see that a quarter of yellow cards are issued for reckless tackles. That's the same as 11 other reasons put together. Pretty significant, right?
+It tells us that all yellow cards were not created equal.
+
+Now it's easier to see that reckless tackles accounts for the same share of bookings as the 11 least frequent reasons put together. Pretty significant, right?
+
+
 
 <svg viewBox="300 150 370 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Artboard</title>
@@ -363,4 +373,4 @@ In reality, you would probably want to run the numbers to get the breakdown of a
 
 If you produce one of these charts for your team or your players, you'll very likely find that there's a small number of reasons that make up the first 25% of bookings. Focus on getting rid of them and there's a huge chance that your players will spend more time on the pitch, helping the team.
 
-Seems obvious when you look at it? The trick is knowing where to look!
+Seems obvious when you look at it? The trick is _using_ the data, not just collecting it.
