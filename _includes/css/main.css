@@ -489,7 +489,8 @@ h1, h2, h3, h4, h5 h6 {
 }
 
 h1 {
-  font-size: 2.4em;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
 }
 
 h2 {
@@ -606,6 +607,30 @@ main > a.tag {
 
 img {
   width: 100%;
+}
+
+/* Table Styles */
+
+table {
+  border: 1px solid #32323a;
+  border-collapse: collapse;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}
+
+th, td {
+  border: 1px solid #32323a;
+  padding: 0.8rem;
+}
+
+tr:hover {background-color: #f7f7f7;}
+
+tr:nth-child(1) {border-bottom:0.1rem solid #32323a;}
+/*tr:nth-child(even) {background-color: #ffffff;}*/
+
+
+td.number {
+  text-align: right;
 }
 
 /* ==========================================================================
