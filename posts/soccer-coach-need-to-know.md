@@ -8,17 +8,42 @@ tags:
 layout: layouts/post.njk
 ---
 
-The chart below shows data of all the yellow cards issued across several football league competitions across several seasons.
+The table below shows a count of yellow cards issued across several football league competitions across several seasons. It totals over three and a half thousand yellow cards.
 
-### bar chart with reasons in alphabetical order
+<table>
+    <tr><th>Description</th><th>Count</th></tr>
+    <tr><td>Impedes Opponent</td><td class="number">331</td></tr>
+    <tr><td>Tripping</td><td class="number">579</td></tr>
+    <tr><td>Reckless Tackle</td><td class="number">970</td></tr>
+    <tr><td>Kicking Opponent</td><td class="number">318</td></tr>
+    <tr><td>Denying an obvious goalscoring opportunity</td><td class="number">76</td></tr>
+    <tr><td>Holding or Pushing</td><td class="number">362</td></tr>
+    <tr><td>Stops a promising attack</td><td class="number">155</td></tr>
+    <tr><td>Excessive Celebration</td><td class="number">156</td></tr>
+    <tr><td>Deliberate Hand Ball</td><td class="number">76</td></tr>
+    <tr><td>Lack of Respect</td><td class="number">130</td></tr>
+    <tr><td>Simulation</td><td class="number">119</td></tr>
+    <tr><td>Other Unsporting Behaviour</td><td class="number">139</td></tr>
+    <tr><td>Dissent</td><td class="number">229</td></tr>
+    <tr><td>Persistently Offending</td><td class="number">31</td></tr>
+    <tr><td>Delays Restart</td><td class="number">40</td></tr>
+    <tr><td>Encroaching</td><td class="number">24</td></tr>
+    <tr><td>Entering / Leaving</td><td class="number">18</td></tr>
+</table>
+
+So that's a lot of cards and a lot of reasons for showing them.
+
+To make it easier to understand, here's a bar chart of that same data.
+
+### Reasons for yellow cards in soccer
 >> bar chart goes here
 
-It's clear to see that reckless tackles is a big factor, but there's maybe a better way to look at the same information a different way to help contextualise it.
+It's clear to see that reckless tackles are a significant factor, but how big?
+
 
 ## Yellow cards issued, ordered by most frequent reason
 
-Have a look at this chart below. It's the same information presented on a donut chart.
-This time, it's sorted so that the most frequent reason is shown first and the rest appear in descending order.
+How about this? Have a look at this chart below. It's the same information presented on a donut chart. This time, it's sorted so that the most frequent reason is shown first and the rest appear in descending order.
 
 <svg viewBox="0 0 627 463" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Artboard</title>
@@ -251,9 +276,12 @@ This time, it's sorted so that the most frequent reason is shown first and the r
 
 It tells us that all yellow cards were not created equal.
 
-Now it's easier to see that reckless tackles accounts for the same share of bookings as the 11 least frequent reasons put together. Pretty significant, right?
+You've maybe heard of the [80/20 rule](https://en.wikipedia.org/wiki/Pareto_principle#In_sports). Broadly speaking, this is an example of it playing-out. 
+
+Looking at the chart, if we take the top half of the chart, it's now easy to see that reckless tackles accounts for the same share of bookings as the 11 least frequent reasons put together. Pretty significant, right?
 
 
+>> SVG of top 1 versus bottom 11 reasons
 
 <svg viewBox="300 150 370 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Artboard</title>
@@ -275,7 +303,7 @@ Now it's easier to see that reckless tackles accounts for the same share of book
     </g>
 </svg>
 
-Going on, if we include “Tripping” and “Holding or Pushing”, then we can account for just over half half of the cards issued.
+Or, to put it another way, if we look just at the right half of the chart we can see that just “Reckless tackles”, “Tripping” and “Holding or Pushing” account for just over half of the total cards issued.
 
 <svg viewBox="300 150 370 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Artboard</title>
@@ -344,6 +372,8 @@ Then coach your players on exactly what to do and what NOT to do. Fine them doub
 
 Imagine that you push that figure from 26% down to almost nothing—you've just saved yourself a quarter of the bookings that you receive in a season!
 
+Widen the scope to include “Tripping” and “Holding & Pushing” and if you eliminate them, you will cut your bookings by half.
+
 ## What will you gain?
 
 The worst offending teams leagues in the UK are picking up 70–80 yellow cards in a season. The teams who get the least bookings are typically around 40–50. And it's no surprise that the teams with the least bookings are usually near the top of the points table at the end of the season.
@@ -356,12 +386,14 @@ They finished on 77 cards for the season which puts them top of the worst offend
 
 Or how about looking at the most booked player. 
 
-Etienne Capoue (Watford—again!) picked up 14 yellow cards in 2018/2019.
+Their player of the season, Etienne Capoue (Watford—again!), picked up 14 yellow cards in 2018/2019.
 
 According to the Premier League rules:
 > An accumulation of 5 yellow cards results in a one match suspension. An accumulation of 10 yellow cards results in a two match suspension. An accumulation of 15 yellow cards results in a three match suspension.
 
-So he earned a one match suspension for five cards, then another two match suspension for ten cards. He was out of contention for three games out of a 38 game season. That's 8% of the season. On top of that, he was sitting on 14 cards which meant he was one card away from picking up a three match suspension. That has to have affected how he played at that point. If he'd been booked again, he would have been warming the bench for 16% of the season!
+(The rules are almost impossible to summarise and they change for different levels of the game so, for the sake of argument, let’s set aside cut-off dates for cards expiring. And let’s not even consider the effect of red cards.)
+
+So he earned a one match suspension for five cards, then another two match suspension for ten cards. He was out of contention for three games out of a 38 game season. That's your best player missing-in-action for 8% of the season. On top of that, he was sitting on 14 cards which meant he was one card away from picking up a three match suspension. That has to have affected how he played at that point. If he'd been booked again, he would have been warming the bench for 16% of the season!
 
 He's on a reported salary of £1.82M a year. That means that he was paid approx. £145k while he was suspended and of no use to the team! And he was one card away from that becoming over a quarter of a million pounds!
 
@@ -369,7 +401,7 @@ He's on a reported salary of £1.82M a year. That means that he was paid approx.
 
 Most coaches won't be dealing with multi-million player salaries but the principle is the same.
 
-In reality, you would probably want to run the numbers to get the breakdown of an individual player's most regular reasons for getting booked rather than take the blanket stats for the team. However, there's a strong chance that there is a direct relationship between your most-booked players and the stats for the whole team. If you want to do that, I've written an article about how to [visualise the reasons that yellow cards are shown](#). Feel free to take that process and use it.
+In reality, you would maybe run the numbers to get the breakdown per player rather than take the blanket stats for the team. However, there's a strong chance that there is a direct relationship between your most-booked players and the stats for the whole team. If you want to do that, I've written an article about how to [visualise the reasons that yellow cards are shown](#). Feel free to take that process and use it.
 
 If you produce one of these charts for your team or your players, you'll very likely find that there's a small number of reasons that make up the first 25% of bookings. Focus on getting rid of them and there's a huge chance that your players will spend more time on the pitch, helping the team.
 

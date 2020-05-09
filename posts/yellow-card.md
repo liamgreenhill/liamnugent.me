@@ -27,8 +27,9 @@ I'm using Sequel Pro to connect to the database.
 I wrote an SQL `JOIN` query, using the `COUNT` function as shown here:
 
 	SELECT `code`, COUNT(*), `description`, `cardType`
-	FROM `CardEvent` LEFT JOIN CardReason ON `CardEvent`.`cardReason_id`=`CardReason`.`id`
-	GROUP BY `code`.
+    FROM `CardEvent` LEFT JOIN CardReason ON `CardEvent`.`cardReason_id`=`CardReason`.`id`
+    WHERE `cardType` = "YELLOW" AND `code` LIKE "%b%"
+    GROUP BY `code`
 
 
 ## Drawing the chart
