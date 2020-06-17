@@ -8,37 +8,159 @@ tags:
 layout: layouts/post.njk
 ---
 
-The table below shows a count of yellow cards issued across several football league competitions across several seasons. It totals over three and a half thousand yellow cards.
+I've been thinking about how the way you visualise data helps to shape your understanding of it. Having lots of data is supposed to be great but the truth is that mountains of raw data isn't easy to understand.
+
+Here's an example that focusses on football (soccer!) and shows how visualing data in different ways can help you find the insights that help you get the edge.
+
+
+## Reasons for yellow cards in soccer
+
+The table below shows a count of yellow cards issued across several football league competitions across several seasons. It totals over three and a half thousand yellow cards. They've been listed under the reason that the cards were issued. These reasons map directly to the official [Laws of the Game](https://www.theifab.com/laws).
 
 <table>
     <tr><th>Description</th><th>Count</th></tr>
-    <tr><td>Impedes Opponent</td><td class="number">331</td></tr>
-    <tr><td>Tripping</td><td class="number">579</td></tr>
-    <tr><td>Reckless Tackle</td><td class="number">970</td></tr>
-    <tr><td>Kicking Opponent</td><td class="number">318</td></tr>
+    <tr><td>Delaying Restart</td><td class="number">40</td></tr>
+    <tr><td>Deliberate handball</td><td class="number">76</td></tr>
     <tr><td>Denying an obvious goalscoring opportunity</td><td class="number">76</td></tr>
-    <tr><td>Holding or Pushing</td><td class="number">362</td></tr>
-    <tr><td>Stops a promising attack</td><td class="number">155</td></tr>
-    <tr><td>Excessive Celebration</td><td class="number">156</td></tr>
-    <tr><td>Deliberate Hand Ball</td><td class="number">76</td></tr>
-    <tr><td>Lack of Respect</td><td class="number">130</td></tr>
-    <tr><td>Simulation</td><td class="number">119</td></tr>
-    <tr><td>Other Unsporting Behaviour</td><td class="number">139</td></tr>
     <tr><td>Dissent</td><td class="number">229</td></tr>
-    <tr><td>Persistently Offending</td><td class="number">31</td></tr>
-    <tr><td>Delays Restart</td><td class="number">40</td></tr>
     <tr><td>Encroaching</td><td class="number">24</td></tr>
-    <tr><td>Entering / Leaving</td><td class="number">18</td></tr>
+    <tr><td>Entering / Leaving the field of play</td><td class="number">18</td></tr>
+    <tr><td>Excessive celebration</td><td class="number">156</td></tr>
+    <tr><td>Holding or pushing</td><td class="number">362</td></tr>
+    <tr><td>Impeding an opponent</td><td class="number">331</td></tr>
+    <tr><td>Kicking an opponent</td><td class="number">318</td></tr>
+    <tr><td>Lack of respect</td><td class="number">130</td></tr>
+    <tr><td>Other unsporting behaviour</td><td class="number">139</td></tr>
+    <tr><td>Persistently offending</td><td class="number">31</td></tr>
+    <tr><td>Reckless Tackle</td><td class="number">970</td></tr>
+    <tr><td>Simulation</td><td class="number">119</td></tr>
+    <tr><td>Stopping a promising attack</td><td class="number">155</td></tr>
+    <tr><td>Tripping</td><td class="number">579</td></tr>
 </table>
 
-So that's a lot of cards and a lot of reasons for showing them.
+So there are 18 reasons that yellow cards are given and there's a bit of a spread. The least issued reason was 18, the highest was 970. 
 
-To make it easier to understand, here's a bar chart of that same data.
+### Bar chart
 
-### Reasons for yellow cards in soccer
->> bar chart goes here
+Let's show that on a bar chart to try and get a sense of the scale of the difference.
 
-It's clear to see that reckless tackles are a significant factor, but how big?
+<svg viewBox="0 0 640 432" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bar chart</title>
+    <desc>Created with Sketch.</desc>
+    <g id="bar-chart" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Axes" transform="translate(34.000000, 7.000000)">
+            <path d="M1.000001,157.5 L581.000001,157.5" id="Stroke-5" stroke="#B8B8B8" stroke-width="0.5"></path>
+            <path d="M1.000001,105.5 L581.000001,105.5" id="Stroke-7" stroke="#B8B8B8" stroke-width="0.5"></path>
+            <path d="M1.000001,53.50001 L581.000001,53.50001" id="Stroke-9" stroke="#B8B8B8" stroke-width="0.5"></path>
+            <path d="M1.000001,0.50001 L581.000001,0.50001" id="Stroke-11" stroke="#B8B8B8" stroke-width="0.5"></path>
+            <path d="M0.500001,209.5 L580.500001,209.5" id="Stroke-24" stroke="#000000" stroke-linecap="square"></path>
+        </g>
+        <g id="Scale" transform="translate(-2.000000, 0.000000)" fill="#000000" font-family="HelveticaNeue, Helvetica Neue" font-size="10" font-weight="normal">
+            <g id="Group-15" transform="translate(19.000000, 209.000000)">
+                <text id="0">
+                    <tspan x="0.64021" y="10.0585671">0</tspan>
+                </text>
+            </g>
+            <g id="Group-17" transform="translate(8.000000, 156.000000)">
+                <text id="250">
+                    <tspan x="0.520211" y="10.8085671">250</tspan>
+                </text>
+            </g>
+            <g id="Group-19" transform="translate(8.000000, 104.000000)">
+                <text id="500">
+                    <tspan x="0.520211" y="10.5585671">500</tspan>
+                </text>
+            </g>
+            <g id="Group-21" transform="translate(8.000000, 52.000000)">
+                <text id="750">
+                    <tspan x="0.520211" y="10.3085671">750</tspan>
+                </text>
+            </g>
+            <g id="Group-23">
+                <text id="1,000">
+                    <tspan x="0.180211" y="10.0585671">1,000</tspan>
+                </text>
+            </g>
+        </g>
+        <text id="Delaying-Restart" transform="translate(51.000000, 271.000000) rotate(-90.000000) translate(-51.000000, -271.000000) " font-family="HelveticaNeue, Helvetica Neue" font-size="10" font-weight="normal" fill="#000000">
+            <tspan x="14" y="275">Delaying Restart</tspan>
+        </text>
+        <polygon id="Fill-60" fill="#00A2FF" points="39 209 64 209 64 216 39 216"></polygon>
+        <text id="Deliberate-handball" transform="translate(85.500000, 278.000000) rotate(-90.000000) translate(-85.500000, -278.000000) " font-family="HelveticaNeue, Helvetica Neue" font-size="10" font-weight="normal" fill="#000000">
+            <tspan x="42" y="282">Deliberate handball</tspan>
+        </text>
+        <polygon id="Fill-62" fill="#00A2FF" points="74 201 98 201 98 216 74 216"></polygon>
+        <text id="Denying-an-obvious-goalscoring-opportunity" transform="translate(120.000000, 333.000000) rotate(-90.000000) translate(-120.000000, -333.000000) " font-family="HelveticaNeue, Helvetica Neue" font-size="10" font-weight="normal" fill="#000000">
+            <tspan x="21" y="337">Denying an obvious goalscoring opportunity</tspan>
+        </text>
+        <polygon id="Fill-64" fill="#00A2FF" points="108 201 132 201 132 216 108 216"></polygon>
+        <text id="Dissent" transform="translate(154.000000, 251.000000) rotate(-90.000000) translate(-154.000000, -251.000000) " font-family="HelveticaNeue, Helvetica Neue" font-size="10" font-weight="normal" fill="#000000">
+            <tspan x="137" y="255">Dissent</tspan>
+        </text>
+        <polygon id="Fill-66" fill="#00A2FF" points="142 169 166 169 166 216 142 216"></polygon>
+        <text id="Encroaching" transform="translate(188.000000, 262.000000) rotate(-90.000000) translate(-188.000000, -262.000000) " font-family="HelveticaNeue, Helvetica Neue" font-size="10" font-weight="normal" fill="#000000">
+            <tspan x="160" y="266">Enc</tspan>
+            <tspan x="177.04" y="266">r</tspan>
+            <tspan x="180.37" y="266">oaching</tspan>
+        </text>
+        <polygon id="Fill-68" fill="#00A2FF" points="176 212 200 212 200 216 176 216"></polygon>
+        <text id="Entering-/-Leaving-the-ﬁeld-of-play" transform="translate(222.000000, 310.000000) rotate(-90.000000) translate(-222.000000, -310.000000) " font-family="HelveticaNeue, Helvetica Neue" font-size="10" font-weight="normal" fill="#000000">
+            <tspan x="146" y="314">Entering / Leaving the ﬁeld of play</tspan>
+        </text>
+        <polygon id="Fill-70" fill="#00A2FF" points="210 213 234 213 234 216 210 216"></polygon>
+        <text id="Excessive-celebratio" transform="translate(256.000000, 283.500000) rotate(-90.000000) translate(-256.000000, -283.500000) " font-family="HelveticaNeue, Helvetica Neue" font-size="10" font-weight="normal" fill="#000000">
+            <tspan x="207" y="287">Excessive celebration</tspan>
+        </text>
+        <polygon id="Fill-72" fill="#00A2FF" points="244 184 268 184 268 216 244 216"></polygon>
+        <text id="Holding-or-pushing" transform="translate(290.500000, 277.000000) rotate(-90.000000) translate(-290.500000, -277.000000) " font-family="HelveticaNeue, Helvetica Neue" font-size="10" font-weight="normal" fill="#000000">
+            <tspan x="248" y="281">Holding or pushing</tspan>
+        </text>
+        <polygon id="Fill-74" fill="#00A2FF" points="278 141 303 141 303 216 278 216"></polygon>
+        <text id="Impeding-an-opponent" transform="translate(324.000000, 285.000000) rotate(-90.000000) translate(-324.000000, -285.000000) " font-family="HelveticaNeue, Helvetica Neue" font-size="10" font-weight="normal" fill="#000000">
+            <tspan x="273" y="289">Impeding an opponent</tspan>
+        </text>
+        <polygon id="Fill-76" fill="#00A2FF" points="312 148 337 148 337 216 312 216"></polygon>
+        <text id="Kicking-an-opponent" transform="translate(358.500000, 281.000000) rotate(-90.000000) translate(-358.500000, -281.000000) " font-family="HelveticaNeue, Helvetica Neue" font-size="10" font-weight="normal" fill="#000000">
+            <tspan x="312" y="285">Kicking an opponent</tspan>
+        </text>
+        <polygon id="Fill-78" fill="#00A2FF" points="346 151 371 151 371 216 346 216"></polygon>
+        <text id="Lack-of-respect" transform="translate(393.000000, 269.000000) rotate(-90.000000) translate(-393.000000, -269.000000) " font-family="HelveticaNeue, Helvetica Neue" font-size="10" font-weight="normal" fill="#000000">
+            <tspan x="358" y="273">Lack of </tspan>
+            <tspan x="393.75" y="273">r</tspan>
+            <tspan x="397.08" y="273">espect</tspan>
+        </text>
+        <polygon id="Fill-80" fill="#00A2FF" points="381 190 405 190 405 216 381 216"></polygon>
+        <text id="Other-unsporting-beh" transform="translate(426.500000, 295.500000) rotate(-90.000000) translate(-426.500000, -295.500000) " font-family="HelveticaNeue, Helvetica Neue" font-size="10" font-weight="normal" fill="#000000">
+            <tspan x="365" y="299">Other unsporting behaviour</tspan>
+        </text>
+        <polygon id="Fill-82" fill="#00A2FF" points="415 188 439 188 439 216 415 216"></polygon>
+        <text id="Persistently-oﬀending" transform="translate(463.500000, 283.000000) rotate(-90.000000) translate(-463.500000, -283.000000) " font-family="HelveticaNeue, Helvetica Neue" font-size="10" font-weight="normal" fill="#000000">
+            <tspan x="415" y="287">Persistently oﬀending</tspan>
+        </text>
+        <polygon id="Fill-84" fill="#00A2FF" points="449 210 473 210 473 216 449 216"></polygon>
+        <text id="Reckless-Tackle" transform="translate(494.500000, 271.000000) rotate(-90.000000) translate(-494.500000, -271.000000) " font-family="HelveticaNeue, Helvetica Neue" font-size="10" font-weight="normal" fill="#000000">
+            <tspan x="458" y="275">Reckless </tspan>
+            <tspan x="501.15" y="275">T</tspan>
+            <tspan x="506.89" y="275">ackle</tspan>
+        </text>
+        <polygon id="Fill-86" fill="#00A2FF" points="483 14 507 14 507 216 483 216"></polygon>
+        <text id="Simulation" transform="translate(529.000000, 258.000000) rotate(-90.000000) translate(-529.000000, -258.000000) " font-family="HelveticaNeue, Helvetica Neue" font-size="10" font-weight="normal" fill="#000000">
+            <tspan x="505" y="262">Simulation</tspan>
+        </text>
+        <polygon id="Fill-88" fill="#00A2FF" points="517 192 541 192 541 216 517 216"></polygon>
+        <text id="Stopping-a-promising-attack" transform="translate(563.500000, 298.000000) rotate(-90.000000) translate(-563.500000, -298.000000) " font-family="HelveticaNeue, Helvetica Neue" font-size="10" font-weight="normal" fill="#000000">
+            <tspan x="500" y="302">Stopping a p</tspan>
+            <tspan x="557.61" y="302">r</tspan>
+            <tspan x="560.94" y="302">omising attack</tspan>
+        </text>
+        <polygon id="Fill-90" fill="#00A2FF" points="551 185 576 185 576 216 551 216"></polygon>
+        <text id="Tripping" transform="translate(597.500000, 253.000000) rotate(-90.000000) translate(-597.500000, -253.000000) " font-family="HelveticaNeue, Helvetica Neue" font-size="10" font-weight="normal" fill="#000000">
+            <tspan x="579" y="257">T</tspan>
+            <tspan x="584.74" y="257">ripping</tspan>
+        </text>
+        <polygon id="Fill-92" fill="#00A2FF" points="585 96 610 96 610 216 585 216"></polygon>
+    </g>
+</svg>
 
 
 ## Yellow cards issued, ordered by most frequent reason
