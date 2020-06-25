@@ -10,7 +10,7 @@ layout: layouts/post.njk
 
 ## When a Workaround Becomes a Feature
 
-I've been using HEY for a week now and I've committed to it. I’m in. Here’s why...
+I've been using [HEY](https://hey.com/), the new email platform from Basecamp, for a week now and I've committed to it. I’m in. Here’s why...
 
 It puts some paving stones down on the way that I've been using email for years. I didn't realise how many workarounds I was relying on!
 
