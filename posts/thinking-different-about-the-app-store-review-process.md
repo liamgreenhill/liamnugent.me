@@ -19,7 +19,7 @@ The top line is that the Hey team submitted their app to the Apple App Store’s
 
 Apple say that this is to make life easier for users but a cynic might point out that taking a 15–30% cut of that income will be a factor in the decision.
 
-And this is the point where it quickly escalates.
+And this is the point where it escalates quickly.
 
 ## “Seemingly arbitrary” is not a new look for the App Store reviewers
 
@@ -37,7 +37,7 @@ By the way, Amazon also seemed to be able to negotiate away their fees. Surely s
 
 Apple say that they need to insist that everyone must use their payment infrastructure because they need to make some money from the App Store. “That’s how Apple supports and pays for its work on the platform”, so says the app store reviewer according to the comments in the Protocol article.
 
-When I read that, it nagged away at me and I realised why. As an Apple Developer, I pay my annual subscription of $99 presumably to _support and pay for its work on the platform_.
+When I read that, it nagged away at me and I realised why. As an Apple developer account holder, I pay my annual subscription of $99 presumably to _support and pay for its work on the platform_.
 
 **If the income from developer account fees isn’t enough to cover their costs, why don't Apple increase the cost of the developer account fee?**
 
