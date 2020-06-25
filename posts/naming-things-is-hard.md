@@ -3,7 +3,7 @@ title: Naming Things is Hard
 description: In product design, coding, or just in life, finding the right words to express what you mean is hard. But when you get it right it is a beautiful thing.
 date: 2020-06-25
 tags:
-  - UX
+  - User Experience
   - product design
 layout: layouts/post.njk
 ---
