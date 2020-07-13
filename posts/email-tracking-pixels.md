@@ -20,7 +20,9 @@ Companies who I think are sincere and who want to do things “the right way” 
 
 I’m a seasoned pro. I have had a hand in sending thousands, if not millions, of emails. I know the game.
 
-Yet, even I am surprised by the number of tracking pixels that have been blocked since using HEY a few weeks ago.
+Yet, even I am surprised by the number of tracking pixels that have been blocked in my inbox since using [HEY](https://hey.com/) a few weeks ago.
+
+## It’s not just the bad guys
 
 I got a message today from a small web business who I know and I trust. They are on the right side of the privacy fence, in my view. But, even _they_ were using a tracking pixel.
 
