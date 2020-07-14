@@ -30,7 +30,7 @@ Giving them the benefit of the doubt, I assume that it’s because their bulk em
 
 But, by blocking these pixels, it’s so liberating to think that I’m part of a world that recognises this kind of tracking _isn’t okay_. Even for companies and people I trust.
 
-Beforehand, I’d been in this zombie state where I thought it couldn’t be even questioned. I thought that using email meant people could track when you open it. And I thought that by sending a marketing email, it was my right to know who opened it and when.
+Beforehand, I’d been in this zombie state where I thought it couldn’t be questioned. I thought that using email meant people could track when you open it. And I thought that by sending a marketing email, it was my right to know who opened it and when.
 
 That’s so wrong!
 
