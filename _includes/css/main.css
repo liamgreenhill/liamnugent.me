@@ -594,6 +594,16 @@ time.postlist-date {
   opacity: 0.5;
 }
 
+.post-footer {
+    border-top: 0.1rem solid #32323a;
+    margin-top: 4rem;
+}
+
+.archive {
+  display: block;
+  margin-top: 4rem;
+}
+
 li.postlist-item > a.tag {
   font-size: 0.8rem;
   margin: 0 0.1rem;
@@ -767,11 +777,11 @@ td.number {
   }
 
   nav, article > footer {
-    border-top: 0.25rem solid #dadada;
+    border-top: 0.1rem solid #dadada;
   }
 
   body > footer {
-    border-top: 1rem solid #dadada;
+    border-top: 0.1rem solid #dadada;
   }
 
   p.standfirst {
@@ -780,6 +790,10 @@ td.number {
 
   ol.postlist li, ul.postlist li {
   border-top: 1px solid #dadada;
+  }
+
+  .post-footer {
+    border-top: 0.1rem solid #dadada;
   }
 
   pre, code {

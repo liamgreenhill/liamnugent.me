@@ -18,15 +18,17 @@ layout: layouts/base.njk
 
       {{ content | safe }}
 
+      <div class="post-footer">
 
-      <p><a href="{{ '/posts' | url }}">← Archive</a></p>
-      <p>Tags to related posts: 
-      {% for tag in tags %}
-      {%- if collections.tagList.indexOf(tag) != -1 -%}
-      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-      <li><a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a></li>
-      {%- endif -%}
-    {% endfor %}</p>
+        <p>Tags to related posts: 
+        {% for tag in tags %}
+        {%- if collections.tagList.indexOf(tag) != -1 -%}
+        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+        <li><a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a></li>
+        {%- endif -%}
+        {% endfor %}</p>
+        <p><a href="{{ '/posts' | url }}" class="archive">← Archive</a></p>
+      </div>
 
       <footer>
         <p class="byline">Posted on <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time> by Liam Nugent.</p>
