@@ -475,14 +475,15 @@ body > header, body > main, body > nav, body > footer {
 
 
 nav, article > footer {
-  border-top: 0.25rem solid Black;
+  border-top: 0.1rem solid Black;
   margin-top: 2em;
 }
 
 body > footer {
-  border-top: 1rem solid Black;
-  margin-top: 2em;
-}
+  border-top: 0.1rem solid Black;
+  padding-top: 1em;
+/*  margin-top: 2em;
+*/}
 
 h1, h2, h3, h4, h5 h6 {
   font-family: Helvetica Neue, sans-serif;
