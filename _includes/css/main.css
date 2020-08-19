@@ -556,6 +556,9 @@ ol.postlist li:nth-child(1), ul.postlist li:nth-child(1) {
   padding-top: 0;
 }
 
+a.postlist-link {
+    font-size: 1.5rem;
+}
 
 .postlist li span.tags,
 .postlist li span.date {
@@ -587,6 +590,8 @@ a[href].direct-link:focus:visited,
 
 time.postlist-date {
   display: table;
+  font-size: 0.75rem;
+  opacity: 0.5;
 }
 
 li.postlist-item > a.tag {
