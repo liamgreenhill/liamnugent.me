@@ -15,7 +15,7 @@ In [World Wide Waste](https://gerrymcgovern.com/books/world-wide-waste/), Gerry 
 
 He provides some chilling examples of the _real_ cost of digital. Whether it is owning a smartphone or starting a video call, he illustrates the direct impact on our planet.
 
-The reality of ‘the cloud’ is far more prosaic than the marketing blurb would have us believe. For every photo you save or document you copy to the cloud, a computer in a data centre somewhere springs into life, heats up and consumes electricity. More often than not, the data centre housing the computer requires even more power to cool the machines down again.
+The reality of ‘the cloud’ is far more prosaic than the marketing blurb would have us believe. For every photo you save or document you copy to the cloud, a computer in a data centre somewhere springs into life, heats up and consumes electricity. More often than not, the data centre housing the computer requires even more power to cool the machine down again.
 
 In fact, the scale of the data we send and store uses enormous amounts of energy — and most of the time we are not even aware. We are fooled by how free it all seems which has allowed us all to get into some bad habits.
 
