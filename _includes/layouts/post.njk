@@ -21,12 +21,14 @@ layout: layouts/base.njk
       <div class="post-footer">
 
         <p>Tags to related posts: 
+        <ul>
         {% for tag in tags %}
         {%- if collections.tagList.indexOf(tag) != -1 -%}
         {% set tagUrl %}/tags/{{ tag }}/{% endset %}
         <li><a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a></li>
         {%- endif -%}
-        {% endfor %}</p>
+        {% endfor %}
+        </ul></p>
         <p><a href="{{ '/posts' | url }}" class="archive">← Archive</a></p>
       </div>
 
