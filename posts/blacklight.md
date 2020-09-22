@@ -1,6 +1,6 @@
 ---
-title: Privacy Matters
-description: Dave Rupert tweeted about Blacklight today — a tool that reveals how much tracking takes places on a website.
+title: Private Matters
+description: Dave Rupert tweeted about Blacklight today — a tool that reveals how much tracking takes place on websites.
 date: 2020-09-22
 tags:
   - Privacy
