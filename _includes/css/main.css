@@ -575,7 +575,8 @@ a.postlist-link {
 /* Direct Links / Markdown Headers */
 .direct-link {
   text-decoration: none;
-  margin-left: .1em;
+  /*margin-left: .1em;*/
+  margin-left:-1.3rem;
 }
 a[href].direct-link,
 a[href].direct-link:visited {
