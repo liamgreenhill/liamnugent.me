@@ -366,8 +366,8 @@ html {
   background-color: #fff8ea; 
   color: #16161d;
   font-family: Georgia;
-  font-size:22px; /*1em*/
-  line-height: 1.4;
+  font-size: 1.3em; /*1em*/
+  line-height: 1.7;
 }
 
 /*
@@ -473,6 +473,11 @@ body > header, body > main, body > nav, body > footer {
    Author's Typography
    ========================================================================== */
 
+@font-face {
+  font-family: Lanark;
+  src: url(/_includes/css/fonts/lanark-regular.woff);
+}
+
 
 nav, article > footer {
   border-top: 0.1rem solid Black;
@@ -486,16 +491,24 @@ body > footer {
 */}
 
 h1, h2, h3, h4, h5 h6 {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: Lanark, Helvetica Neue, sans-serif;
+  text-transform: uppercase;
+  scroll-margin-top: 2rem;
+  scroll-snap-margin-top: 2rem;
 }
 
 h1 {
-  font-size: 2.4rem;
-  line-height: 2.8rem;
+  font-size: 3rem;
+  line-height: 3rem;
 }
 
 h2 {
-  margin-top: 2rem;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+h2.alt {
+  font-family: "Lanark";
 }
 
 p.standfirst, p.about-the-author {
@@ -557,7 +570,7 @@ ol.postlist li:nth-child(1), ul.postlist li:nth-child(1) {
 }
 
 a.postlist-link {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .postlist li span.tags,
@@ -576,7 +589,7 @@ a.postlist-link {
 .direct-link {
   text-decoration: none;
   /*margin-left: .1em;*/
-  margin-left:-1.3rem;
+  margin-left:-1.9rem;
 }
 a[href].direct-link,
 a[href].direct-link:visited {
@@ -742,6 +755,12 @@ td.number {
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
+  h1, h2 {
+    letter-spacing: 0.2rem;
+  }
+  h3, h4, h5, h6 {
+    letter-spacing: 0.1rem;
+  }  
 }
 
 @media print,
