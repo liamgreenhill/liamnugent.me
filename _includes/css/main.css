@@ -476,6 +476,7 @@ body > header, body > main, body > nav, body > footer {
 @font-face {
   font-family: Lanark;
   src: url(/_includes/css/fonts/lanark-regular.woff);
+  /*font-display: swap;*/
 }
 
 
