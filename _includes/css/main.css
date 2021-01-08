@@ -781,6 +781,7 @@ td.number {
 @media (prefers-color-scheme: dark) {
   html {
     background-color: #16161d;
+    background-image: none;
     color: #dadada;  
   }
   a {
