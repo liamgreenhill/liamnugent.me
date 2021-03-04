@@ -364,7 +364,7 @@ template {
 
 html {
   background-color: #fff8ea;
-  background-image: linear-gradient(100deg, #ffeeee, #ddefbb);
+  /*background-image: linear-gradient(100deg, #ffeeee, #ddefbb);*/
   color: #16161d;
   font-family: Georgia;
   font-size: 1.3em; /*1em*/
