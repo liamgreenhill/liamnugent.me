@@ -9,7 +9,7 @@
  */
 
 html {
-  line-height: 1.15; /* 1 */
+  line-height: 1.1; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
@@ -368,7 +368,7 @@ html {
   color: #16161d;
   font-family: Georgia;
   font-size: 1.3em; /*1em*/
-  line-height: 1.7;
+  line-height: 1.5;
 }
 
 /*
@@ -492,8 +492,9 @@ body > footer {
 /*  margin-top: 2em;
 */}
 
-h1, h2, h3, h4, h5 h6 {
+h1  {
   font-family: Lanark, Helvetica Neue, sans-serif;
+  font-weight: normal;
   text-transform: uppercase;
   scroll-margin-top: 2rem;
   scroll-snap-margin-top: 2rem;
@@ -506,7 +507,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  line-height: 2rem;
+  line-height: 2.4rem;
 }
 
 h2.alt {
@@ -542,6 +543,11 @@ blockquote {
   margin-inline-start: 0em;
   margin-block-start: 0em;
   padding-left: 1em;
+}
+
+ul.postlist {
+    list-style: none;
+    margin-left: -2rem;
 }
 
 article ul {
@@ -757,12 +763,9 @@ td.number {
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
-  h1, h2 {
+  h1 {
     letter-spacing: 0.1rem;
   }
-  h3, h4, h5, h6 {
-    letter-spacing: 0.1rem;
-  }  
 }
 
 @media print,
