@@ -41,15 +41,13 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
-
   eleventyConfig.addPassthroughCopy("_includes/css");
-  eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("browserconfig.xml");
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("humans.txt");
   eleventyConfig.addPassthroughCopy("icon.png");
   eleventyConfig.addPassthroughCopy("robots.txt");
-  eleventyConfig.addPassthroughCopy("site.webmanifest");
+  //eleventyConfig.addPassthroughCopy("site.webmanifest");
   eleventyConfig.addPassthroughCopy("tile.png");
   eleventyConfig.addPassthroughCopy("tile-wide.png");
 
