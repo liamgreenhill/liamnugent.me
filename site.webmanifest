@@ -6,7 +6,8 @@
     "type": "image/png",
     "sizes": "192x192"
   }],
-  "start_url": "/?utm_source=homescreen",
+  "start_url": "/",
   "background_color": "#fafafa",
+  "display": "minimal-ui",
   "theme_color": "#fafafa"
 }

@@ -50,6 +50,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("icon.png");
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("site.webmanifest");
+  eleventyConfig.addPassthroughCopy("sw.js");
   eleventyConfig.addPassthroughCopy("tile.png");
   eleventyConfig.addPassthroughCopy("tile-wide.png");
 

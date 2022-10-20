@@ -10,6 +10,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#fafafa">
 
+  <!-- Progressive Web App elements -->
+  <link rel="manifest" href="/site.webmanifest" />
+
   <!--  Essential meta tags for social media post cards -->
   <meta property="og:title" content="{{ renderData.title or title or metadata.title }}">
   <meta property="og:description" content="{{ renderData.description or description or metadata.description }}">
@@ -56,6 +59,20 @@
   </footer>
 
   <!-- Current page: {{ page.url | url }} -->
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+          // Registration was successful
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+          // registration failed :(
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
+  </script>
 
 </body>
 
