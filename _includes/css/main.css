@@ -546,7 +546,7 @@ blockquote {
 }
 
 ul.postlist {
-    list-style: none;
+  list-style: none;
     margin-left: -2rem;
 }
 
@@ -670,6 +670,28 @@ tr:nth-child(1) {border-bottom:0.1rem solid #32323a;}
 
 td.number {
   text-align: right;
+}
+
+nav>ul {
+    padding: 0;
+}
+
+nav>ul>li {
+    list-style: none;
+}
+
+nav>ul>li>a {
+    background-color: #663399;
+    border-radius: 0.6rem;
+    color: white;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav>ul>li>a:hover {
+    text-decoration: underline;
+    background-color: rgb(189,16,224);
 }
 
 /* ==========================================================================
