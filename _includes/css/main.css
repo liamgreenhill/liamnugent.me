@@ -233,7 +233,7 @@ fieldset {
 /**
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
+ * 3. Remove the padding so developers vare not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
 
@@ -362,10 +362,18 @@ template {
    Base styles: opinionated defaults
    ========================================================================== */
 
+:root {
+--border-weight-light: 0.05rem;
+--border-weight-regular: 0.1rem;
+--color-dark: #16161d;
+--color-light: #dadada;
+}
+
+
 html {
   background-color: #fff8ea;
   /*background-image: linear-gradient(100deg, #ffeeee, #ddefbb);*/
-  color: #16161d;
+  color: var(--color-dark);
   font-family: Georgia;
   font-size: 1.3em; /*1em*/
   line-height: 1.5;
@@ -480,14 +488,17 @@ body > header, body > main, body > nav, body > footer {
   /*font-display: swap;*/
 }
 
-
-nav, article > footer {
-  border-top: 0.1rem solid Black;
+article > footer {
+  border-top: var(--border-weight-light) solid var(--color-dark);
   margin-top: 2em;
 }
 
+nav {
+  border-top: var(--border-weight-light) solid var(--color-dark);
+}
+
 body > footer {
-  border-top: 0.1rem solid Black;
+  border-top: var(--border-weight-light) solid var(--color-dark);
   padding-top: 1em;
 /*  margin-top: 2em;
 */}
@@ -514,14 +525,12 @@ h2.alt {
   font-family: "Lanark";
 }
 
-p.standfirst, p.about-the-author {
-  font-style: italic;
+section.preamble {
+    border-bottom: 1px solid var(--color-dark);
 }
 
-p.standfirst {
-  margin-bottom: 2em;
-  border-bottom: 0.1rem solid Black;
-  padding-bottom: 2rem;
+p.standfirst, p.about-the-author {
+  font-style: italic;
 }
 
 p.copyright {
@@ -567,13 +576,11 @@ ol.postlist, ul.postlist {
 }
 
 ol.postlist li, ul.postlist li {
-  border-top: 1px solid #16161d;
   margin-bottom: 2rem;
   padding-top: 1rem;
 }
 
 ol.postlist li:nth-child(1), ul.postlist li:nth-child(1) {
-  border: none;
   padding-top: 0;
 }
 
@@ -610,6 +617,24 @@ a[href].direct-link:focus:visited,
   color: #aaa;
 }
 
+.post__header {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.post__header > h1 {
+  margin: 0.5rem 0;
+}
+
+.post__header > .post__meta {
+  margin-top: 1rem;
+}
+
+.post__header > .post__meta > time {
+    opacity: 0.5;
+    font-size: 0.9rem;
+}
+
 time.postlist-date {
   display: table;
   font-size: 0.75rem;
@@ -617,13 +642,7 @@ time.postlist-date {
 }
 
 .post-footer {
-    border-top: 0.1rem solid #32323a;
-    margin-top: 4rem;
-}
-
-.archive {
-  display: block;
-  margin-top: 4rem;
+    border-top: var(--border-weight-light) solid #32323a;
 }
 
 li.postlist-item > a.tag {
@@ -694,6 +713,32 @@ nav>ul>li>a:hover {
     background-color: rgb(189,16,224);
 }
 
+.tag-list {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: flex-start;
+}
+
+ul.tag-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.tag-list li:after {
+    content: ",";
+}
+
+ul.tag-list li{
+    margin-bottom: 0rem;
+}
+
+ul.tag-list li:last-child:after {
+    content: ".";
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -710,7 +755,7 @@ nav>ul>li>a:hover {
 * Hide only visually, but have it available for screen readers:
 * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 *
-* 1. For long content, line feeds are not interpreted as spaces and small width
+* 1. For long content, line feeds vare not interpreted as spaces and small width
 *    causes content to wrap 1 word per line:
 *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
 */
@@ -785,9 +830,6 @@ nav>ul>li>a:hover {
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
-  h1 {
-    letter-spacing: 0.1rem;
-  }
 }
 
 @media print,
@@ -805,7 +847,7 @@ nav>ul>li>a:hover {
 
 @media (prefers-color-scheme: dark) {
   html {
-    background-color: #16161d;
+    background-color: var(--color-dark);
     background-image: none;
     color: #dadada;  
   }
@@ -824,30 +866,29 @@ nav>ul>li>a:hover {
     color: #ffffff;
   }
 
-  nav, article > footer {
-    border-top: 0.1rem solid #dadada;
+  article > footer, nav {
+    border-top: var(--border-weight-light) solid var(--color-light);
+  }
+
+  nav>ul>li>a {
+    background-color: transparent;
+    border: 1px solid #639;
   }
 
   body > footer {
-    border-top: 0.1rem solid #dadada;
-  }
-
-  p.standfirst {
-  border-bottom: 0.1rem solid #dadada;
-  }
-
-  ol.postlist li, ul.postlist li {
-  border-top: 1px solid #dadada;
+    border-top: var(--border-weight-light) solid var(--color-light);
   }
 
   .post-footer {
-    border-top: 0.1rem solid #dadada;
+    border-top: var(--border-weight-light) solid var(--color-light);
   }
 
   pre, code {
     background-color: #32323A;
   }
-
+  .post__header > .post__meta > time {
+    color: #ffffff;
+  }
 }
 
 
@@ -878,7 +919,7 @@ nav>ul>li>a:hover {
     content: " (" attr(title) ")";
   }
   /*
-     * Don't show links that are fragment identifiers,
+     * Don't show links that vare fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
   a[href^="#"]:after,

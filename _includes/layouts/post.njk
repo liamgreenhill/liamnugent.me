@@ -2,44 +2,49 @@
 layout: layouts/base.njk
 ---
 
-  <header>
-    <h1>{{ title }}</h1>
-    <svg viewBox="0 0 376 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <defs>
-        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" style="stop-color:rgb(102,51,153);stop-opacity:1"></stop>
-          <stop offset="100%" style="stop-color:rgb(189,16,224);stop-opacity:1"></stop>
-        </linearGradient>
-      </defs>
-      <g id="Artboard" stroke="none" stroke-width="1" fill="none" stroke-linecap="square">
-        <path d="M3,19.1750897 C73,11.1750897 120,-7.82491029 145,11.1750897 C170,30.1750897 179.548554,52.1750897 212,52.1750897 C244.451446,52.1750897 254.902901,16.2929845 275,11.1750897 C288.398066,7.76315983 321.064733,7.76315983 373,11.1750897" id="Path" stroke="url(#grad1)" stroke-width="5"></path>
-      </g>
-    </svg>
-  </header>
-
   <main>
-    <article>
+    <article itemtype="http://schema.org/BlogPosting">
+      <header class="post__header">
+        <h1 itemprop="headline">{{ title }}</h1>
+        <div class="post__meta">
+          <time datetime="{{ date | htmlDateString }}" itemProp="datePublished">{{ date | readableDate }}</time>
+        </div>        
+      </header>
 
-      <p class="standfirst">{{ description }}</p>
+      <p class="standfirst" itemProp="abstract">{{ description }}</p>
+
+      <svg viewBox="0 0 376 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+          <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:rgb(102,51,153);stop-opacity:1"></stop>
+            <stop offset="100%" style="stop-color:rgb(189,16,224);stop-opacity:1"></stop>
+          </linearGradient>
+        </defs>
+        <g id="Artboard" stroke="none" stroke-width="1" fill="none" stroke-linecap="square">
+          <path d="M3,19.1750897 C73,11.1750897 120,-7.82491029 145,11.1750897 C170,30.1750897 179.548554,52.1750897 212,52.1750897 C244.451446,52.1750897 254.902901,16.2929845 275,11.1750897 C288.398066,7.76315983 321.064733,7.76315983 373,11.1750897" id="Path" stroke="url(#grad1)" stroke-width="5"></path>
+        </g>
+      </svg>
 
       {{ content | safe }}
 
       <div class="post-footer">
 
-        <p>Tags to related posts: 
-        <ul>
-        {% for tag in tags %}
-        {%- if collections.tagList.indexOf(tag) != -1 -%}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <li><a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a></li>
-        {%- endif -%}
-        {% endfor %}
-        </ul></p>
-        <p><a href="{{ '/posts' | url }}" class="archive">← Archive</a></p>
+        <div class="tag-list">
+          <p>Tags:</p>
+          <ul class="tag-list">
+            {% for tag in tags %}
+            {%- if collections.tagList.indexOf(tag) != -1 -%}
+            {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+            <li><a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a></li>
+            {%- endif -%}
+            {% endfor %}
+          </ul>
+        </div>
+
+          <p><a href="{{ '/posts' | url }}">← All posts</a></p>
       </div>
 
       <footer>
-        <p class="byline">Posted on <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time> by Liam Nugent.</p>
         <p class="about-the-author">About the author, Liam Nugent—he has led teams that design and build software for over 15 years. His interests include: earth experience design, web standards, and accessibility. He recently released “Lanark”, a font based on the distinctive type of Scottish polymath, Alasdair Gray. He lives in Glasgow with his wife and son.</p>
       </footer>
 
