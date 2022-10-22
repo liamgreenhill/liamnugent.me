@@ -517,8 +517,9 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
-  line-height: 2.4rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 2rem;
 }
 
 h2.alt {
@@ -526,7 +527,7 @@ h2.alt {
 }
 
 section.preamble {
-    border-bottom: 1px solid var(--color-dark);
+    border-bottom: var(--border-weight-light) solid var(--color-dark);
 }
 
 p.standfirst, p.about-the-author {
@@ -603,8 +604,7 @@ a.postlist-link {
 /* Direct Links / Markdown Headers */
 .direct-link {
   text-decoration: none;
-  /*margin-left: .1em;*/
-  margin-left:-1.9rem;
+  margin-left:-1.4rem;
 }
 a[href].direct-link,
 a[href].direct-link:visited {
