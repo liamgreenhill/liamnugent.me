@@ -21,16 +21,16 @@ The key error message was:
 
 This was in conflict with an earlier line in the debug output that reported that the build script was using an earlier version of node. `Now using node v10.24.1 (npm v6.14.12)` appeared around line 21 of the deploy log on netlify’s web UI.
 
-So my fix was to update the version of node that netlify would use to deploy my site.
+Therefore, my fix was to update the version of node that netlify would use to deploy my site.
 
-First of all, I updated node locally and tried pushing that up but this had no impact. (I think I followed the original set up advice to ignore my node folder so I should have known this was a red herring.)
+First of all, I updated node locally and tried pushing that up but this had no impact. (I think I followed the original set up advice to git ignore my node modules folder—I should have known this was a red herring.)
 
 The solution was to insert a line to my `netlify.toml` file to set an [environment variable](https://docs.netlify.com/configure-builds/environment-variables/)
 
 I added the following line at the end of my `netlify.toml` file:
 `environment = { NODE_VERSION = "14.15.3" }`
 
-So my entire netlify.toml file now looks like this:
+My entire netlify.toml file now looks like this:
 ```
 [build]
   publish = "_site"
@@ -40,4 +40,4 @@ So my entire netlify.toml file now looks like this:
 
 Setting the environment variable did the trick and the deployment ran successfully.
 
-The show is back on the road!
+The show is back on the road! If you’re here because you did a Google search for that error message, hopefully this helps you too.
