@@ -3,7 +3,7 @@ layout: layouts/base.njk
 ---
 
   <main>
-    <article itemtype="http://schema.org/BlogPosting">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
       <header class="post__header">
         <h1 itemprop="headline">{{ title }}</h1>
         <div class="post__meta">
@@ -25,7 +25,9 @@ layout: layouts/base.njk
         </g>
       </svg>
 
-      {{ content | safe }}
+      <div itemprop="articleBody">
+        {{ content | safe }}  
+      </div>
 
       <div class="post-footer">
 
