@@ -516,11 +516,16 @@ h1 {
   line-height: 3rem;
 }
 
+h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+
 h2 {
   font-size: 1.6rem;
-  font-weight: normal;
   line-height: 2rem;
 }
+
 
 h2.alt {
   font-family: "Lanark";
@@ -549,7 +554,7 @@ footer > p > a {
 
 
 blockquote {
-  border-left: 4px solid #222;
+  border-left: 4px solid var(--color-dark);
   margin-inline-start: 0em;
   margin-block-start: 0em;
   padding-left: 1em;
@@ -606,6 +611,11 @@ a.postlist-link {
   text-decoration: none;
   margin-left:-1.4rem;
 }
+
+h3 > a.direct-link {
+  margin-left: -1.1rem;
+}
+
 a[href].direct-link,
 a[href].direct-link:visited {
   color: transparent;
@@ -864,6 +874,10 @@ ul.tag-list li:last-child:after {
   h5 a,
   h6 a {
     color: #ffffff;
+  }
+
+  blockquote {
+    border-left: 4px solid var(--color-light);
   }
 
   article > footer, nav {
