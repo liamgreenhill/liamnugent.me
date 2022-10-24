@@ -445,6 +445,24 @@ textarea {
   resize: vertical;
 }
 
+#siteSearch fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: flex-start;
+}
+
+#siteSearch input[type="submit"]{
+  background-color: #639;
+  border-radius: 0.2rem;
+  border: 0;
+  color: #fff;
+  display: block;
+  font-size: .6rem;
+  padding: 0 1rem;
+  text-decoration: none;
+}
+
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
