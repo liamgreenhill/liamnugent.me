@@ -447,7 +447,7 @@ textarea {
 
 #siteSearch fieldset {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 0.6rem;
   justify-content: flex-start;
 }
