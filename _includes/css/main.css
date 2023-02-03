@@ -665,7 +665,7 @@ a[href].direct-link:focus:visited,
 time.postlist-date {
   display: table;
   font-size: 0.75rem;
-  opacity: 0.5;
+/*  opacity: 0.5;*/
 }
 
 .post-footer {
