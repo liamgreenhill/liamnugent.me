@@ -501,9 +501,10 @@ body > header, body > main, body > nav, body > footer {
 
 @font-face {
   font-family: Lanark;
-  src: url(/_includes/css/fonts/lanark-regular.woff);
-  font-display: swap;
+  src: url(/_includes/css/fonts/lanark-regular.woff2);
+  font-display: optional;
 }
+
 
 article > footer {
   border-top: var(--border-weight-light) solid var(--color-dark);
