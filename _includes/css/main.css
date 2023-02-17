@@ -447,19 +447,25 @@ textarea {
 
 #siteSearch fieldset {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 0.6rem;
   justify-content: flex-start;
 }
 
-#siteSearch input[type="submit"]{
-  background-color: #639;
-  border-radius: 0.2rem;
-  border: 0;
-  color: #fff;
-  display: block;
-  font-size: .6rem;
-  text-decoration: none;
+#siteSearch input[type=submit] {
+    background-color: #639;
+    border-radius: 0.2rem;
+    border: 0;
+    color: #fff;
+    display: block;
+    /* font-size: .6rem; */
+    text-decoration: none;
+    width: 100%;
+    height: 2rem;
+}
+
+input#searchInput {
+    width: 100%;
 }
 
 /* ==========================================================================
@@ -858,6 +864,11 @@ ul.tag-list li:last-child:after {
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
+
+  #siteSearch fieldset {
+    flex-wrap: nowrap;
+  }
+
 }
 
 @media print,

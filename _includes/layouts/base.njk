@@ -49,6 +49,14 @@
 
   <footer>
 
+    <form action="https://www.google.co.uk/search" method="get" id="siteSearch">
+      <input type="hidden" name="q" value="site:liamnugent.me"> 
+        <fieldset>      
+          <label for="searchInput">Search:</label><input type="text" name="q" id="searchInput">
+          <input type="submit" value="Search">
+        </fieldset>
+    </form>
+
     <p class="copyright">Copyright © 2018–{{ helpers.currentYear() }} Liam Nugent.
       <span>All rights reserved.</span>
       <a href="/accessibility">Accessibility Statement</a>
