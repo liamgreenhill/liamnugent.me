@@ -665,7 +665,6 @@ a[href].direct-link:focus:visited,
 }
 
 .post__header > .post__meta > time {
-    opacity: 0.5;
     font-size: 0.9rem;
 }
 
