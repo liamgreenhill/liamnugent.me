@@ -25,6 +25,6 @@ That’s easy to say, but what does it mean?
 ### It means...
 - work out how you would know if your theory is right?
 - don't “obsess about data”, obsess about the signals that tell you if your theory is good or bad
-- learn what you can and then apply your new knowledge to this problem, if you suspect there is more juice in the lemon. Or look for another one. 
+- learn what you can and then apply your new knowledge to the problem. If you suspect there is more juice in the lemon, keep squeezing. Or if there isn’t, look for another one. 
 
 (Another problem, that is, not another lemon.)
