@@ -3,9 +3,8 @@ const fs = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
-const markdownIt = require("markdown-it");
-const markdownItAnchor = require("markdown-it-anchor");
-
+const anchor = require('markdown-it-anchor')
+const md = require('markdown-it')()
 const CleanCSS = require("clean-css");
 
 module.exports = function(eleventyConfig) {
@@ -52,17 +51,21 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("tile-wide.png");
 
   /* Markdown Overrides */
-  let markdownLibrary = markdownIt({
-    html: true,
-    breaks: true,
-    linkify: true
-  }).use(markdownItAnchor, {
-    permalink: true,
-    permalinkBefore: true,
-    permalinkClass: "direct-link",
-    permalinkSymbol: "#"
-  });
-  eleventyConfig.setLibrary("md", markdownLibrary);
+  // let markdownLibrary = markdownIt({
+  //   html: true,
+  //   breaks: true,
+  //   linkify: true
+  // }).use(markdownItAnchor, {
+  //   permalink: true,
+  //   permalinkBefore: true,
+  //   permalinkClass: "direct-link",
+  //   permalinkSymbol: "#"
+  // });
+  // eleventyConfig.setLibrary("md", markdownLibrary);
+
+md.use(anchor, {
+  permalink: anchor.permalink.headerLink({ safariReaderFix: true })
+})
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
