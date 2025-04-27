@@ -1,14 +1,35 @@
 const { DateTime } = require("luxon");
 const fs = require("fs");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
+const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const anchor = require('markdown-it-anchor')
 const md = require('markdown-it')()
 const CleanCSS = require("clean-css");
 
+
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPlugin(pluginRss);
+  
+
+  eleventyConfig.addPlugin(feedPlugin, {
+    type: "atom", // or "rss", "json"
+    outputPath: "/feed.xml",
+    collection: {
+      name: "posts", // iterate over `collections.posts`
+      limit: 10,     // 0 means no limit
+    },
+    metadata: {
+      language: "en",
+      title: "Liam Nugent’s website",
+      subtitle: "A place where Liam Nugent writes about the web, software product management, and other related ideas.",
+      base: "https://liamnugent.me/",
+      author: {
+        name: "Liam Nugent",
+        email: "liam.nugent@hey.com", // Optional
+      }
+    }
+  });
+
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
 
@@ -19,6 +40,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
   });
+
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
