@@ -14,9 +14,9 @@ Inspired by [Zach Waugh](https://zachwaugh.com) and his simple sketching app, [W
 
 It is called [Milngavie Train](https://apps.apple.com/gb/app/milngavie-train/id6529520293) and it shows live departure information for the next train to leave Milngavie Station in Scotland.
 
-Why bother, you may ask! The answer is simple: when I am taking a train into town soon, the time the next train is leaving is all I need to know. I don’t need access to the entire timetabling information for the whole Scotrail network. I don’t need to use Google Maps or Apple Maps to summon the culmination of all of humanity’s geographical knowledge. But most of all, I am usually pushing it for time and am walking briskly down the street towards the station and I just want confirmation of two things: the train is on time AND which platform I need to aim for.
+Why bother, you may ask! The answer is simple: when I am taking a train into town soon, the time when the next train will leave is all I need to know. I don’t need access to the entire timetabling information for the whole Scotrail network. I don’t need to use Google Maps or Apple Maps to summon the culmination of all of humanity’s geographical knowledge. But most of all, I am usually slightly late and am walking briskly down the street towards the station and I just want confirmation of two things: the train is on time AND which platform I need to aim for. (I may or may not have ended up jumping on the wrong train in the past when under time pressure. I couldn't possibly comment!)
 
-Having to open Maps, enter my starting point, my target destination and choose my mode of transport is, for me, not possible to do with my fat thumbs while walking along the street as fast as I can and trying to cross safely through traffic. I just need one button to mash to see my answer.
+Having to open Apple Maps, enter my starting point, my target destination and choose my mode of transport is, for me, not possible to do with my fat thumbs while walking along the street as fast as I can, and trying to cross safely through traffic. I just need one button to mash to see my answer.
 
 So this works for me and it solves my problem. Since putting it together and testing it myself, I’ve used it loads of times.
 
