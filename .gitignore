@@ -4,3 +4,9 @@
 
 _site
 node_modules
+# content plan runtime output
+content-plan/*.out
+content-plan/*.err
+
+# career strategy docs — keep OUT of the public repo
+content-plan/
