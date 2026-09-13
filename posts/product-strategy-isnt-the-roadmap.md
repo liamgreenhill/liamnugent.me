@@ -64,7 +64,8 @@ You see it most clearly in the teams out on the outer reaches of the business. B
 
 And honestly? Who could blame them.
 
-Because the question they’re asking is a fair one: how many strategic pillars, pivots, refreshes, business themes and key mandates have come and gone, and been dashed against the rocks of short-sightedly hitting the scorecard, as the organisation watches Q4 hove into view?
+Because the question they’re asking is a fair one: how many strategic pillars, pivots, refreshes, business themes and key mandates have come and gone, and been abandoned  
+to short-sightedly hit the scorecard, as the organisation watches Q4 hove into view?
 
 Quite a few, is the answer.
 
