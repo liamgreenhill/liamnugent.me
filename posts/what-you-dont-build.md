@@ -47,7 +47,7 @@ Resist, resist, resist the temptation to build a one-size-fits-all.
 
 I’ve even seen the notifications centre idea get built, and then the intent of the original message couldn’t be met by the thing that had been built to carry it.
 
-So the message comes in two parts. Be extremely choosy about what you let be added to your system. And be militant about taking things out.
+So my advice comes in two parts. Be extremely choosy about what you let be added to your system. And be militant about taking things out.
 
 ## Nobody gets promoted for deleting things
 
