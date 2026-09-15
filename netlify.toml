@@ -1,3 +1,13 @@
 [build]
   publish = "_site"
   command = "DEBUG=* eleventy"
+
+# The feed lived at /feed/feed.xml until Apr 2025, when the move to the new
+# eleventy-plugin-rss feedPlugin changed it to /feed.xml. Autodiscovery kept
+# advertising the old path until Sep 2026, so long-standing subscribers still
+# have it. A 301 gets their reader to update to the canonical URL by itself.
+[[redirects]]
+  from = "/feed/feed.xml"
+  to = "/feed.xml"
+  status = 301
+  force = true
