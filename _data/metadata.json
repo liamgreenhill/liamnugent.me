@@ -5,7 +5,7 @@
   "feed": {
     "subtitle": "A place where Liam Nugent writes about the web, software product management, and other related ideas.",
     "filename": "feed.xml",
-    "path": "/feed/feed.xml",
+    "path": "/feed.xml",
     "id": "https://liamnugent.me/"
   },
   "author": {
