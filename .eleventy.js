@@ -1,11 +1,12 @@
-const { DateTime } = require("luxon");
 const fs = require("fs");
 const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
-const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
-const anchor = require('markdown-it-anchor')
-const md = require('markdown-it')()
 const CleanCSS = require("clean-css");
+
+// Dates are formatted by hand rather than through Intl, which renders
+// September as "Sept" under en-GB and would silently change every post date.
+const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const pad = n => String(n).padStart(2, "0");
 
 
 module.exports = function(eleventyConfig) {
@@ -30,7 +31,6 @@ module.exports = function(eleventyConfig) {
     }
   });
 
-  eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
 
   eleventyConfig.setDataDeepMerge(true);
@@ -38,13 +38,13 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
   eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
+    return `${pad(dateObj.getUTCDate())} ${MONTHS[dateObj.getUTCMonth()]} ${dateObj.getUTCFullYear()}`;
   });
 
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+    return `${dateObj.getUTCFullYear()}-${pad(dateObj.getUTCMonth() + 1)}-${pad(dateObj.getUTCDate())}`;
   });
 
   // Get the first `n` elements of a collection.
@@ -57,8 +57,15 @@ module.exports = function(eleventyConfig) {
   });
 
   /* CSS Minify */
+  // Every page inlines the same stylesheet, so this ran 81 times per build on
+  // identical input and accounted for ~45% of total build time. Cache on the
+  // input string: one minify per distinct stylesheet, per build.
+  const cssCache = new Map();
   eleventyConfig.addFilter("cssmin", function(code) {
-    return new CleanCSS({}).minify(code).styles;
+    if (!cssCache.has(code)) {
+      cssCache.set(code, new CleanCSS({}).minify(code).styles);
+    }
+    return cssCache.get(code);
   });
 
   eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
@@ -71,23 +78,6 @@ module.exports = function(eleventyConfig) {
   //eleventyConfig.addPassthroughCopy("site.webmanifest");
   eleventyConfig.addPassthroughCopy("tile.png");
   eleventyConfig.addPassthroughCopy("tile-wide.png");
-
-  /* Markdown Overrides */
-  // let markdownLibrary = markdownIt({
-  //   html: true,
-  //   breaks: true,
-  //   linkify: true
-  // }).use(markdownItAnchor, {
-  //   permalink: true,
-  //   permalinkBefore: true,
-  //   permalinkClass: "direct-link",
-  //   permalinkSymbol: "#"
-  // });
-  // eleventyConfig.setLibrary("md", markdownLibrary);
-
-md.use(anchor, {
-  permalink: anchor.permalink.headerLink({ safariReaderFix: true })
-})
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
