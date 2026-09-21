@@ -1,6 +1,6 @@
 [build]
   publish = "_site"
-  command = "DEBUG=* eleventy"
+  command = "npm run build"
 
 # The feed lived at /feed/feed.xml until Apr 2025, when the move to the new
 # eleventy-plugin-rss feedPlugin changed it to /feed.xml. Autodiscovery kept
@@ -11,3 +11,12 @@
   to = "/feed.xml"
   status = 301
   force = true
+
+# Carried over from the HTML5 Boilerplate .htaccess, which has never run: the
+# site is served by Netlify, not Apache, so nothing in that file took effect.
+# Everything else it set — www→apex, HSTS, compression, cache headers — Netlify
+# already does. This was the only directive still worth having.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
