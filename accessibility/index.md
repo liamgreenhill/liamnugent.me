@@ -22,12 +22,12 @@ I know some parts of this website are not fully accessible:
 
 - you cannot modify the line height or spacing of text
 - I've deliberately not included a skip to the main content when using a screen reader because every page (as of April 2020) starts with the content, so there's no need to skip to it.
-- the consequence of this is that navigation is at the foot of every page. For those who regularly use screen readers, I'd love to hear if this is something that helps or hinders you. Please [send me a message](mailto:liam@greenhilldigital.com) with your opinion.
+- the consequence of this is that navigation is at the foot of every page. For those who regularly use screen readers, I'd love to hear if this is something that helps or hinders you. Please [send me a message](mailto:liam.nugent@hey.com) with your opinion.
 - If you listen to the page on a screen reader on iOS, for some unfathomable reason the copyright date says, "Copyright. 2020 _inches_"! It's infuriating but I've not yet worked out why. It does this on several other websites too.
 
 
 ## Reporting accessibility problems with this website
-I'm always looking to improve the accessibility of this website. If you find any problems not listed on this page or think I'm not meeting accessibility requirements, please [send me a message](mailto:liam@greenhilldigital.com) with your feedback. I'll respond to it promptly.
+I'm always looking to improve the accessibility of this website. If you find any problems not listed on this page or think I'm not meeting accessibility requirements, please [send me a message](mailto:liam.nugent@hey.com) with your feedback. I'll respond to it promptly.
 
 
 ## Technical information about this website’s accessibility
