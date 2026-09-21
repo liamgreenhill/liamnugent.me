@@ -43,7 +43,7 @@ But seriously. If we go with the product lifecycle doctrine, build is only the f
     <text x="62" y="191">live and get stuck</text>
   </g>
 </svg>
-<figcaption><em>Build is the short bit.</em></figcaption>
+<figcaption><em>Build should be the short bit.</em></figcaption>
 </figure>
 
 Once it’s built, and once your features are starting to be used, there’s a question you should strive to ask as quickly as possible.
