@@ -70,7 +70,7 @@ The main point I want to make is that the vast majority of features and products
 
 So who is thinking, talking and writing about how you keep the show on the road?
 
-If you are, or if you follow anyone who is, [email me about it](mailto:liam.nugent@hey.com). I’d love to hear about it.
+If you are, or if you follow anyone who is, [please email me a link](mailto:liam.nugent@hey.com). I’d love to hear about it.
 
 ## Managed decline
 
