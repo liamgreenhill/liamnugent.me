@@ -552,6 +552,8 @@ h2, h3, h4, h5, h6 {
 h2 {
   font-size: 1.6rem;
   line-height: 2rem;
+  position: relative;  /* positioning context for a.direct-link */
+  scroll-margin-top: 2rem;
 }
 
 
@@ -635,13 +637,17 @@ a.postlist-link {
 
 
 /* Direct Links / Markdown Headers */
+/* The anchor is pulled out of the text flow entirely, so revealing it on hover
+   never nudges the heading sideways. Anchoring it to right: 100% rather than a
+   fixed negative offset means it ends just left of the heading whatever width
+   the "#" happens to be, and it still clears the viewport inside the 1rem
+   gutter the grid leaves on narrow screens. */
 .direct-link {
+  position: absolute;
+  right: 100%;
+  margin-right: 0.25rem;
+  font-size: 1rem;
   text-decoration: none;
-  margin-left:-1.4rem;
-}
-
-h3 > a.direct-link {
-  margin-left: -1.1rem;
 }
 
 a[href].direct-link,
