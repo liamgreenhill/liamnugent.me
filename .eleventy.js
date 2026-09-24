@@ -68,6 +68,51 @@ module.exports = function(eleventyConfig) {
     return cssCache.get(code);
   });
 
+  // Anchor links on h2s, so any section of a post can be linked to directly.
+  // Hand-rolled rather than pulling in markdown-it-anchor: this is the whole
+  // feature, and the dependency list stays where it is.
+  const slugify = text => text
+    .toLowerCase()
+    .replace(/[’'"“”]/g, "")   // quotes disappear: "o’clock" -> "oclock"
+    .replace(/[^a-z0-9]+/g, "-")  // everything else becomes a separator
+    .replace(/^-+|-+$/g, "");
+
+  eleventyConfig.amendLibrary("md", md => {
+    md.core.ruler.push("heading_anchors", state => {
+      const used = new Set();
+
+      state.tokens.forEach((token, i) => {
+        if (token.type !== "heading_open" || token.tag !== "h2") {
+          return;
+        }
+
+        const inline = state.tokens[i + 1];
+        // Read the child tokens rather than inline.content, so a heading with
+        // emphasis or a link in it slugs from its words, not its markdown.
+        const text = inline.children
+          .filter(child => child.type === "text" || child.type === "code_inline")
+          .map(child => child.content)
+          .join("")
+          .trim();
+
+        const base = slugify(text) || `section-${used.size + 1}`;
+        // Two headings worded the same way would otherwise share an id, and the
+        // browser would always jump to the first of them.
+        let slug = base;
+        for (let n = 2; used.has(slug); n++) {
+          slug = `${base}-${n}`;
+        }
+        used.add(slug);
+
+        token.attrSet("id", slug);
+
+        const anchor = new state.Token("html_inline", "", 0);
+        anchor.content = `<a class="direct-link" href="#${slug}" aria-label="Link to this section: ${md.utils.escapeHtml(text)}">#</a>`;
+        inline.children.unshift(anchor);
+      });
+    });
+  });
+
   eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
   eleventyConfig.addPassthroughCopy("_includes/css");
   eleventyConfig.addPassthroughCopy("browserconfig.xml");
