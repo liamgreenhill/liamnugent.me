@@ -10,3 +10,6 @@ content-plan/*.err
 
 # career strategy docs — keep OUT of the public repo
 content-plan/
+
+# Fizzy CLI local config — never commit
+.fizzy.yaml
