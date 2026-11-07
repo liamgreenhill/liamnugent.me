@@ -367,16 +367,52 @@ template {
 --border-weight-regular: 0.1rem;
 --color-dark: #16161d;
 --color-light: #dadada;
+--color-accent: #639;
+
+/* Type scale: four sizes, nothing else. */
+--size-small: 0.8rem;
+--size-body: 1rem;
+--size-heading: 1.5rem;
+--size-display: clamp(2.75rem, 2rem + 2vw, 3.5rem);
+
+/* One unit of vertical space, a little under one line of body text. Every
+   gap is a multiple or fraction of it, so the page keeps a steady rhythm. */
+--space: 1.25rem;
 }
 
 
 html {
   background-color: #fff8ea;
-  /*background-image: linear-gradient(100deg, #ffeeee, #ddefbb);*/
   color: var(--color-dark);
-  font-family: Georgia;
-  font-size: 1.3em; /*1em*/
+  font-family: Georgia, serif;
+  /* 20px on phones (as before), easing up to 22px on wide screens, where
+     we read from further away. */
+  font-size: clamp(1.25rem, 1rem + 0.5vw, 1.375rem);
   line-height: 1.5;
+}
+
+p, ul, ol, blockquote, pre, figure, table {
+  margin-block: var(--space);
+}
+
+p, li, blockquote {
+  text-wrap: pretty;
+}
+
+h1, h2, h3 {
+  text-wrap: balance;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.2em;
+  text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+}
+
+a:hover {
+  color: var(--color-accent);
+  text-decoration-color: currentColor;
 }
 
 /*
@@ -446,6 +482,7 @@ textarea {
 }
 
 #siteSearch fieldset {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
@@ -453,15 +490,24 @@ textarea {
 }
 
 #siteSearch input[type=submit] {
-    background-color: #639;
-    border-radius: 0.2rem;
-    border: 0;
-    color: #fff;
+    background-color: transparent;
+    border-radius: 0.6rem;
+    border: var(--border-weight-regular) solid var(--color-accent);
+    color: var(--color-accent);
+    cursor: pointer;
     display: block;
-    /* font-size: .6rem; */
-    text-decoration: none;
+    padding: 0.4em 1.2em;
     width: 100%;
-    height: 2rem;
+}
+
+#siteSearch input[type=submit]:hover {
+    text-decoration: underline;
+}
+
+#siteSearch input[type=text] {
+    border: var(--border-weight-light) solid currentColor;
+    border-radius: 0.2rem;
+    padding: 0.4em;
 }
 
 input#searchInput {
@@ -490,7 +536,8 @@ input#searchInput {
 
 body {
   display: grid;
-  grid-template-columns: minmax(0, auto) minmax(0, 28rem) minmax(0, auto);
+  /* 32rem of Georgia is roughly 66 characters a line: Rutter's ideal measure. */
+  grid-template-columns: minmax(0, auto) minmax(0, 32rem) minmax(0, auto);
   grid-gap: 1rem;
   grid-auto-rows: auto;
 }
@@ -527,33 +574,45 @@ nav {
 
 body > footer {
   border-top: var(--border-weight-light) solid var(--color-dark);
-  padding-top: 1em;
-/*  margin-top: 2em;
-*/}
+  font-size: var(--size-small);
+  padding-block: var(--space) calc(var(--space) * 2);
+}
 
 h1  {
   font-family: Lanark, Helvetica Neue, sans-serif;
+  font-size: var(--size-display);
   font-weight: normal;
+  line-height: 1;
+  margin-block: calc(var(--space) * 2) var(--space);
   text-transform: uppercase;
   scroll-margin-top: 2rem;
-  scroll-snap-margin-top: 2rem;
-}
-
-h1 {
-  font-size: 3rem;
-  line-height: 3rem;
 }
 
 h2, h3, h4, h5, h6 {
   font-weight: normal;
-}
-
-
-h2 {
-  font-size: 1.6rem;
-  line-height: 2rem;
+  line-height: 1.25;
   position: relative;  /* positioning context for a.direct-link */
   scroll-margin-top: 2rem;
+  /* Headings sit closer to the text they introduce than to the text before. */
+  margin-block: calc(var(--space) * 2) calc(var(--space) / 2);
+}
+
+h2 {
+  font-size: var(--size-heading);
+}
+
+h3, h4, h5, h6 {
+  font-size: var(--size-body);
+  font-style: italic;
+}
+
+/* The swoosh spans the text column at every width. */
+body > header > svg,
+article > svg {
+  display: block;
+  height: auto;
+  margin-block: var(--space);
+  width: 100%;
 }
 
 
@@ -565,34 +624,34 @@ section.preamble {
     border-bottom: var(--border-weight-light) solid var(--color-dark);
 }
 
-p.standfirst, p.about-the-author {
+p.standfirst {
   font-style: italic;
 }
 
-p.copyright {
-  font-size: 0.6rem;
+/* Long runs of italic are tiring to read, so the bio is set small instead. */
+p.about-the-author {
+  font-size: var(--size-small);
 }
 
 p.copyright span {
   display: table;
 }
 
-footer > p > a {
-  display: table;
-  margin-top: 1rem;
+p.copyright a {
+  display: inline-block;
+  margin: calc(var(--space) / 3) 1em 0 0;
 }
 
 
 blockquote {
-  border-left: 4px solid var(--color-dark);
-  margin-inline-start: 0em;
-  margin-block-start: 0em;
+  border-left: var(--border-weight-regular) solid var(--color-dark);
+  margin-inline: 0;
   padding-left: 1em;
 }
 
 ul.postlist {
   list-style: none;
-    margin-left: -2rem;
+  padding-left: 0;
 }
 
 article ul {
@@ -604,31 +663,38 @@ article ul li a {
 }
 
 li {
-  margin-bottom: 1rem;
-}
-
-ol.postlist, ul.postlist {
-  margin-bottom: 2rem;
+  margin-bottom: calc(var(--space) / 3);
 }
 
 ol.postlist li, ul.postlist li {
-  margin-bottom: 2rem;
-  padding-top: 1rem;
+  margin-bottom: calc(var(--space) * 1.5);
 }
 
-ol.postlist li:nth-child(1), ul.postlist li:nth-child(1) {
-  padding-top: 0;
+.postlist p {
+  margin-block: calc(var(--space) / 3) 0;
 }
 
+/* In a list of titles the context already says "link", so the underline
+   only appears on hover. */
 a.postlist-link {
-    font-size: 1.3rem;
+  display: block;
+  font-size: var(--size-heading);
+  line-height: 1.25;
+  text-decoration: none;
+}
+
+a.postlist-link:hover {
+  text-decoration: underline;
+}
+
+section.preamble > :first-child {
+  margin-top: 0;
 }
 
 .postlist li span.tags,
 .postlist li span.date {
   display: table;
-  font-size: 0.8rem;
-
+  font-size: var(--size-small);
 }
 
 .postlist li span.tags {
@@ -671,17 +737,16 @@ a[href].direct-link:focus:visited,
 }
 
 .post__header > .post__meta {
-  margin-top: 1rem;
+  margin-top: calc(var(--space) * 2);
 }
 
 .post__header > .post__meta > time {
-    font-size: 0.9rem;
+  font-size: var(--size-small);
 }
 
 time.postlist-date {
   display: table;
-  font-size: 0.75rem;
-/*  opacity: 0.5;*/
+  font-size: var(--size-small);
 }
 
 .post-footer {
@@ -689,7 +754,7 @@ time.postlist-date {
 }
 
 li.postlist-item > a.tag {
-  font-size: 0.8rem;
+  font-size: var(--size-small);
   margin: 0 0.1rem;
   text-transform: capitalize;
   white-space: nowrap;
@@ -714,8 +779,8 @@ img {
 table {
   border: 1px solid #32323a;
   border-collapse: collapse;
-  font-family: sans-serif;
-  font-size: 0.8rem;
+  font-family: sans-serif; /* lining figures keep numeric columns aligned */
+  font-size: var(--size-small);
   width: 100%;
 }
 
@@ -734,26 +799,42 @@ td.number {
   text-align: right;
 }
 
-nav>ul {
-    padding: 0;
+/* The "Navigation" heading stays for screen readers but isn't shown. */
+nav > h2 {
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
-nav>ul>li {
-    list-style: none;
+/* Phones: stacked, outlined buttons that are easy to tap.
+   Wider screens: a plain row of text links (see the media query below). */
+nav > ul {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--space) / 2);
+  padding: 0;
 }
 
-nav>ul>li>a {
-    background-color: #663399;
-    border-radius: 0.6rem;
-    color: white;
-    display: block;
-    padding: 1rem;
-    text-decoration: none;
+nav > ul > li {
+  list-style: none;
+  margin: 0;
 }
 
-nav>ul>li>a:hover {
-    text-decoration: underline;
-    background-color: rgb(189,16,224);
+nav > ul > li > a {
+  border: var(--border-weight-regular) solid var(--color-accent);
+  border-radius: 0.6rem;
+  color: var(--color-accent);
+  display: block;
+  padding: 0.75em 1em;
+  text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+  text-decoration: underline;
 }
 
 .tag-list {
@@ -878,6 +959,29 @@ ul.tag-list li:last-child:after {
     flex-wrap: nowrap;
   }
 
+  #siteSearch input[type=submit] {
+    width: auto;
+  }
+
+  nav > ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0 1.5em;
+  }
+
+  nav > ul > li > a {
+    border: 0;
+    color: inherit;
+    padding: 0;
+    text-decoration: underline;
+    text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+  }
+
+  nav > ul > li > a:hover {
+    color: var(--color-accent);
+    text-decoration-color: currentColor;
+  }
+
 }
 
 @media print,
@@ -899,11 +1003,8 @@ ul.tag-list li:last-child:after {
     background-image: none;
     color: #dadada;  
   }
-  a {
-    color: #8aadff;
-  }
-  a:visited {
-    color: #ad8aff; 
+  :root {
+    --color-accent: #c3a6ff;
   }
   h1 a,
   h2 a,
@@ -915,16 +1016,11 @@ ul.tag-list li:last-child:after {
   }
 
   blockquote {
-    border-left: 4px solid var(--color-light);
+    border-left: var(--border-weight-regular) solid var(--color-light);
   }
 
   article > footer, nav {
     border-top: var(--border-weight-light) solid var(--color-light);
-  }
-
-  nav>ul>li>a {
-    background-color: transparent;
-    border: 1px solid #639;
   }
 
   body > footer {
